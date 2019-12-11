@@ -1,0 +1,138 @@
+ /* Large Devices, Wide Screens */
+
+ @media only screen and (max-width: 1200px) {
+    .ads-width{
+        width: 50% !important;
+        height: 200px;
+        overflow: hidden;
+    }
+    .ads-button-content{
+        border-top: 1px solid #EFEEF2;
+    }
+    .right-panel-follwer-item .right-panel-follower-imgae{
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+   .bf-form-control{
+       width: 100% !important;
+   }
+   .fixed-panel {
+       display: none;
+   }
+   .panel-left{
+    display: block;
+    width: 250px;
+}
+}
+
+@media only screen and (min-width: 810px) {
+    
+}
+
+@media only screen and (max-width: 810px) {
+  
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .header{
+        padding: 0 10px;
+    }
+   
+    .data-menu-none{
+        display: none;
+    }
+    .panel-left{
+        -webkit-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
+        -moz-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
+        box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
+    }
+    .header-web{
+        display: none;
+        
+    }
+    .header-mobile{
+        display: block !important;
+    }
+    .header .header-icon-panel{
+        width: 90%;
+    }
+    .header .header-icon-panel ul{
+       
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        display: table;
+    }
+  
+    .popup-friends-content{
+        width: 50% !important;
+    }
+    
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .ranking-tab-people{
+        overflow: auto;
+        width: 100px;
+        height: 410px;
+        display: flex;
+        white-space: nowrap;
+    }
+    .ranking-tab-earn{
+        overflow: auto;
+        width: 100px;
+        height: 410px;
+        display: flex;
+        white-space: nowrap;
+    }
+    .ranking-section .ranking-tablinks .ranking-tab-link{
+        font-size: 14px;
+    }
+    .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent{
+
+        height:190px ;
+    }
+    .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-list .ranking-tab-table tr td{
+        width: 180px;
+        display: inline-flex;
+    }
+    .ranking-tab-table{
+      
+        width: 100%;
+        display: table;
+        
+    }
+    .ads-width{
+        width: 100% !important;
+        height: 200px;
+        overflow: hidden;
+    }
+    .ads-button-content{
+        border: none;
+    }
+    .ads-statistic-item{
+        border-top: 1px solid #EFEEF2;
+        border-bottom: 1px solid #EFEEF2;
+    }
+    
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    .popup-friends-content{
+        width: 90% !important;
+    }
+    
+    
+}
