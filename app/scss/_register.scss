@@ -103,34 +103,41 @@
                 }
             }
         }
+
         .content_register_left_bottom {
             margin-top: 45px;
-            img{
+
+            img {
                 width: 70%;
             }
         }
     }
-    .content_register_right{
+
+    .content_register_right {
         width: 70%;
         float: right;
-        .content_register_right_top{
-            h6{
+
+        .content_register_right_top {
+            h6 {
                 margin-bottom: 22px;
                 font-weight: 600;
                 color: #9100ff;
             }
-            input{
+
+            input {
                 padding: 0px 15px;
                 border-radius: 30px;
                 font-size: 13px;
                 height: 30px;
             }
-            .country_city{
+
+            .country_city {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 17px;
                 margin-bottom: 20px;
-                select{
+
+                select {
                     border-radius: 50px;
                     height: 31px;
                     font-size: 12px;
@@ -138,23 +145,27 @@
                     width: 48%;
                 }
             }
-            .radioButtons{
+
+            .radioButtons {
                 display: flex;
                 margin-top: 10px;
                 margin-bottom: 10px;
+
                 .radio-item {
                     display: inline-block;
                     position: relative;
                     padding: 0 6px;
                     margin: 0px 14px 0 0;
-    
+
                     input[type='radio'] {
                         display: none;
-                      }
-                      label {
+                    }
+
+                    label {
                         color: #666;
                         font-weight: normal;
                         display: flex;
+
                         &:before {
                             content: " ";
                             display: inline-block;
@@ -166,15 +177,16 @@
                             border-radius: 11px;
                             border: 1px solid lightgrey;
                             background-color: transparent;
-                          }
-                          span{
-                              font-size: 14px;
-                              margin-left: 7px;
-                          }
-                      }
-                  }
-                  
-                  .radio-item input[type=radio]:checked + label:after {
+                        }
+
+                        span {
+                            font-size: 14px;
+                            margin-left: 7px;
+                        }
+                    }
+                }
+
+                .radio-item input[type=radio]:checked+label:after {
                     border-radius: 11px;
                     width: 9px;
                     height: 9px;
@@ -184,18 +196,21 @@
                     content: " ";
                     display: block;
                     background: #9100FF;
-                  }
-                
+                }
+
             }
-            .birthday{
+
+            .birthday {
                 display: flex;
                 justify-content: space-between;
                 align-items: baseline;
                 margin-bottom: 10px;
-                p{
+
+                p {
                     font-size: 13px;
                 }
-                select{
+
+                select {
                     border-radius: 50px;
                     width: 25%;
                     height: 31px;
@@ -203,41 +218,46 @@
                     line-height: 15px;
                 }
             }
-            .email{
+
+            .email {
                 margin-bottom: 10px;
             }
-            .password{
+
+            .password {
                 margin-bottom: 10px;
             }
-            .formInfo{
+
+            .formInfo {
                 color: #9100ff;
                 font-size: 12px;
                 margin-top: 25px;
             }
-            .signUpForm{
-                    color: white;
-                    background: #9100FF;
-                    border-radius: 60px;
-                    width: 120px;
-                    height: 34px;
-                    line-height: 17px;
+
+            .signUpForm {
+                color: #fff;
+                background: #9100ff;
+                border-radius: 60px;
+                width: 110px;
+                height: 32px;
+                line-height: 17px;
+                font-size: 14px;
             }
         }
-       .content_register_right_bottom{
-           ul{
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
-            border-top: 1px solid #dbdbdb;
-            padding-top: 30px;
-            padding-left: 0px;
-            color: #9100FF;
-            li{
 
+        .content_register_right_bottom {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+                border-top: 1px solid #dbdbdb;
+                padding-top: 30px;
+                padding-left: 0px;
+                color: #9100FF;
+
+                li {}
             }
-           }
-       }
+        }
     }
 
 }
@@ -245,74 +265,82 @@
 
 
 @media only screen and (max-width: 767px) {
-    .content_register{
+    .content_register {
         margin-top: 15px;
-        .content_register_left{
-            .content_register_left_center{
-                .content_register_left_center_item{
-                    p{
+
+        .content_register_left {
+            .content_register_left_center {
+                .content_register_left_center_item {
+                    p {
                         padding: 13px 13px;
                         font-size: 18px;
                     }
                 }
             }
         }
-        .content_register_right{
+
+        .content_register_right {
             width: 100%;
         }
     }
-  }
+}
 
 
-  @media only screen and (max-width: 400px) {
-    .header-register{
-        .header-web{
-            .header-log-in{
-                .email{
-                    label{
+@media only screen and (max-width: 400px) {
+    .header-register {
+        .header-web {
+            .header-log-in {
+                .email {
+                    label {
                         font-size: 12px;
                     }
                 }
-                .password{
-                    label{
+
+                .password {
+                    label {
                         font-size: 12px;
                     }
                 }
-                .login-btn{
-                    button{
+
+                .login-btn {
+                    button {
                         font-size: 12px;
                     }
                 }
             }
         }
     }
-    .content_register{
-        .content_register_left{
-            .content_register_left_top{
-                h3{
+
+    .content_register {
+        .content_register_left {
+            .content_register_left_top {
+                h3 {
                     font-size: 23px;
                 }
-                p{
+
+                p {
                     font-size: 14px;
                 }
             }
-            .content_register_left_center{
-                .content_register_left_center_item{
-                    p{
+
+            .content_register_left_center {
+                .content_register_left_center_item {
+                    p {
                         padding: 13px 10px !important;
                         font-size: 15px;
                     }
-                    span{
+
+                    span {
                         font-size: 11px;
                     }
                 }
             }
-            .content_register_left_bottom{
+
+            .content_register_left_bottom {
                 margin-bottom: 30px;
             }
         }
-        .content_register_right{
 
-        }
+        .content_register_right {}
     }
-  }
+}
