@@ -1,0 +1,30 @@
+.subscribers{
+    .subscribers_header{
+
+        .subscribers_header_bottom{
+            display: flex;
+            p{
+                color: gray;
+                margin: 10px 20px 5px 0px;
+            }
+        }
+    }
+    .subscribers_content{
+        table{
+            tr{
+                th:first-child{
+                    padding: 10px 80px 10px 0px;
+                }
+                th{
+                    border-bottom: 1px solid gray;
+                    color: blue;
+                    padding: 10px 40px 10px 0px;
+                }
+                td{
+                    border-bottom: 1px solid gray;
+                    padding: 10px 40px 10px 0px;
+                }
+            }
+        }
+    }
+}
