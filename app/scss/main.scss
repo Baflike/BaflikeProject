@@ -8,7 +8,7 @@ $dark-333333: #333333;
 $white:#ffffff;
 $white-fon-f9f9f9: #f9f9f9;
 $grey1:#a6a7a8;
-$grrey2-EFEEF2:#EFEEF2;
+$grrey2-EFEEF2:rgb(235, 235, 236);
 $grey-edge-F5F5F5: #F5F5F5;
 $index-popup: 999;
 $idnex-panel: 70;
@@ -20,6 +20,11 @@ $font-playfair: 'Playfair Display',
 serif;
 $box-sahdow1: 0 3px 6px rgba(0, 0, 0, 0.1);
 $popup-background: rgba(71, 80, 90, 0.3);
+* {
+    font-family: $font-sans;
+}
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
