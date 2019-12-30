@@ -1,170 +1,210 @@
  /* Large Devices, Wide Screens */
 
  @media only screen and (max-width: 1200px) {
-    .ads-width{
-        width: 50% !important;
-        height: 200px;
-        overflow: hidden;
-    }
-    .ads-button-content{
-        border-top: 1px solid #EFEEF2;
-    }
-    .right-panel-follwer-item .right-panel-follower-imgae{
-        width: 35px !important;
-        height: 35px !important;
-    }
-}
+     .ads-width {
+         width: 50% !important;
+         height: 200px;
+         overflow: hidden;
+     }
 
-/* Medium Devices, Desktops */
+     .ads-button-content {
+         border-top: 1px solid #EFEEF2;
+     }
 
-@media only screen and (max-width: 992px) {
-   .bf-form-control{
-       width: 100% !important;
-   }
-   .fixed-panel {
-       display: none;
-   }
-   .panel-left{
-    display: block;
-    width: 250px;
-}
-}
+     .right-panel-follwer-item .right-panel-follower-imgae {
+         width: 35px !important;
+         height: 35px !important;
+     }
+ }
 
-@media only screen and (min-width: 810px) {
-    
-}
+ /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 810px) {
-  
-}
+ @media only screen and (max-width: 992px) {
+     .bf-form-control {
+         width: 100% !important;
+     }
+
+     .fixed-panel {
+         display: none;
+     }
+
+     .panel-left {
+         display: block;
+         width: 250px;
+     }
+ }
+
+ @media only screen and (min-width: 810px) {}
+
+ @media only screen and (max-width: 810px) {}
 
 
-/* Small Devices, Tablets */
+ /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {
-    .header{
-        padding: 0 10px;
-    }  
-    
-    .data-menu-none{
-        display: none ; 
-    } 
-    .panel-left{
-        -webkit-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
-        -moz-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
-        box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
-    }
-    .header-web{
-        display: none;
-        
-    }
-    .header-mobile{
-        display: block !important;
-    }
-    .header .header-icon-panel{
-        width: 90%;
-    }
-    .header .header-icon-panel ul{
-       
-        float: none;
-        margin: 0 auto;
-        text-align: center;
-        display: table;
-    }
-  
-    .popup-friends-content{
-        width: 50% !important;
-    }
-    .profile-follow-list-content .profile-follow-list-tab .profile-requests-item{
-        width: 100%;
-    }
-    
-}
+ @media only screen and (max-width: 768px) {
+     .header {
+         padding: 0 10px;
+     }
 
-@media only screen and (max-width: 768px) {
-    .profile-images-tab .profile-images-item{
-        width: 50%;
-    }
-}
-/* Extra Small Devices, Phones */
+     .data-menu-none {
+         display: none;
+     }
 
-@media only screen and (max-width: 480px) {
-    .ranking-tab-people{
-        overflow: auto;
-        width: 100px;
-        /* height: 410px; */
-        display: flex;
-        white-space: nowrap;
-    }
-    .ranking-tab-earn{
-        overflow: auto;
-        width: 100px;
-        /* height: 410px; */
-        display: flex;
-        white-space: nowrap;
-    }
-    .ranking-section .ranking-tablinks .ranking-tab-link{
-        font-size: 14px;
-    }
-    .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent{
+     .panel-left {
+         -webkit-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
+         -moz-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
+         box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
+     }
 
-        height:190px ;
-    }
-    .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-list .ranking-tab-table tr td{
-        width: 180px;
-        display: inline-flex;
-    }
-    .ranking-tab-table{
-      
-        width: 100%;
-        display: table;
-        
-    }
-    .ads-width{
-        width: 100% !important;
-        height: 200px;
-        overflow: hidden;
-    }
-    .ads-button-content{
-        border: none;
-    }
-    .ads-statistic-item{
-        border-top: 1px solid #EFEEF2;
-        border-bottom: 1px solid #EFEEF2;
-    }
-    .my-profile-content .profile-top .prfile-information{
-        margin-left: 0;
-        margin-top: 100px;
-        text-align: center;
-    }
-    .my-profile-content .profile-top .profile-image-big{
-       left: 0 ;
-       right: 0;
-       margin: 0 auto;
-    }
-    .profile-followers-tab-content .profile-requests-item .popup-request-item-img-content{
-        padding-top: 15px;
-        width: 15%;
-    }
-    .profile-followers-tab-content .profile-requests-item .popup-request-item-content{
-        padding-top: 15px;
-        width: 50%;
-    }
-    .profile-followers-tab-content .profile-requests-item .popup-request-button-content{
-        
-        width: 35%;
-    }
-    .profile-images-tab .profile-images-item{
-        width: 100%;
-    }
-}
+     .header-web {
+         display: none;
 
-/* Custom, iPhone Retina */
+     }
 
-@media only screen and (max-width: 320px) {
-    .popup-friends-content{
-        width: 90% !important;
-    }
-    
-    
-}
+     .header-mobile {
+         display: block !important;
+     }
+
+     .header .header-icon-panel {
+         width: 90%;
+     }
+
+     .header .header-icon-panel ul {
+
+         float: none;
+         margin: 0 auto;
+         text-align: center;
+         display: table;
+     }
+
+     .popup-friends-content {
+         width: 50% !important;
+     }
+
+     .profile-follow-list-content .profile-follow-list-tab .profile-requests-item {
+         width: 100%;
+     }
+
+ }
+
+ @media only screen and (max-width: 768px) {
+     .profile-images-tab .profile-images-item {
+         width: 50%;
+     }
+ }
+
+ /* Extra Small Devices, Phones */
+
+ @media only screen and (max-width: 480px) {
+     .ranking-tab-people {
+         overflow: auto;
+         width: 100px;
+         /* height: 410px; */
+         display: flex;
+         white-space: nowrap;
+     }
+
+     .ranking-tab-earn {
+         overflow: auto;
+         width: 100px;
+         /* height: 410px; */
+         display: flex;
+         white-space: nowrap;
+     }
+
+     .ranking-section .ranking-tablinks .ranking-tab-link {
+         font-size: 14px;
+     }
+
+     .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent {
+
+         height: 190px;
+     }
+
+     .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-list .ranking-tab-table tr td {
+         width: 180px;
+         display: inline-flex;
+     }
+
+     .ranking-tab-table {
+
+         width: 100%;
+         display: table;
+
+     }
+
+     .ads-width {
+         width: 100% !important;
+         height: 200px;
+         overflow: hidden;
+     }
+
+     .ads-button-content {
+         border: none;
+     }
+
+     .ads-statistic-item {
+         border-top: 1px solid #EFEEF2;
+         border-bottom: 1px solid #EFEEF2;
+     }
+
+     .my-profile-content .profile-top .prfile-information {
+         margin-left: 0;
+         margin-top: 100px;
+         text-align: center;
+     }
+
+     .my-profile-content .profile-top .profile-image-big {
+         left: 0;
+         right: 0;
+         margin: 0 auto;
+     }
+
+     .profile-followers-tab-content .profile-requests-item .popup-request-item-img-content {
+         padding-top: 15px;
+         width: 15%;
+     }
+
+     .profile-followers-tab-content .profile-requests-item .popup-request-item-content {
+         padding-top: 15px;
+         width: 50%;
+     }
+
+     .profile-followers-tab-content .profile-requests-item .popup-request-button-content {
+
+         width: 35%;
+     }
+
+     .profile-images-tab .profile-images-item {
+         width: 100%;
+     }
+
+     .my-profile-content .profile-top .profile-panel-tab .profile-panel-left {
+         float: none;
+         display: block;
+         width: 100%;
+         text-align: center;
+         padding-top: 15px;
+     }
+
+     .my-profile-content .profile-top .profile-panel-tab .profile-panel-right {
+         float: none;
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+
+     .earn-money-content .earn-money-item {
+         width: 100%;
+     }
+ }
+
+ /* Custom, iPhone Retina */
+
+ @media only screen and (max-width: 320px) {
+     .popup-friends-content {
+         width: 90% !important;
+     }
+
+
+ }
