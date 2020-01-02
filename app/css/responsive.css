@@ -32,6 +32,12 @@
          display: block;
          width: 250px;
      }
+     .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter {
+         width: 100%;
+     }
+     .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput{
+         width: 75%;
+     }
  }
 
  @media only screen and (min-width: 810px) {}
@@ -84,13 +90,22 @@
      .profile-follow-list-content .profile-follow-list-tab .profile-requests-item {
          width: 100%;
      }
+     .profile-images-tab .profile-images-item {
+        width: 50%;
+    }
 
+    .ads-show-all-content .ads-show-all-item{
+       width: 50%;
+    }
  }
 
- @media only screen and (max-width: 768px) {
-     .profile-images-tab .profile-images-item {
-         width: 50%;
-     }
+ @media only screen and (max-width: 560px) {
+    .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .ads-filter-label{
+        width: 30%;
+    }
+    .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput{
+        width: 70%;
+    }
  }
 
  /* Extra Small Devices, Phones */
@@ -196,6 +211,9 @@
 
      .earn-money-content .earn-money-item {
          width: 100%;
+     }
+     .ads-show-all-content .ads-show-all-item{
+        width: 100%;
      }
  }
 

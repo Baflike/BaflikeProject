@@ -364,7 +364,8 @@ body {
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             cursor: pointer;
-            .profile-image-big-overlay{
+
+            .profile-image-big-overlay {
                 opacity: 0;
                 position: absolute;
                 border-radius: 50%;
@@ -374,14 +375,16 @@ body {
                 bottom: 0;
                 background-color: rgba(0, 0, 0, 0.4);
                 transition: 0.2s ease-in-out;
-                p{
-                   text-align: center;
-                   line-height: 160px;
-                   color: white;
-                   text-transform: uppercase;
+
+                p {
+                    text-align: center;
+                    line-height: 160px;
+                    color: white;
+                    text-transform: uppercase;
                 }
             }
-            &:hover .profile-image-big-overlay{
+
+            &:hover .profile-image-big-overlay {
                 opacity: 1;
             }
         }
@@ -452,13 +455,16 @@ body {
         }
     }
 }
-.profileContent{
+
+.profileContent {
     display: none;
 }
-.profileContentActive{
+
+.profileContentActive {
     display: table;
     width: 100%;
 }
+
 .profile-followers-tab-content {
     display: table;
     width: 100%;
@@ -483,7 +489,7 @@ body {
         text-decoration: none;
         padding: 10px 0;
     }
-   
+
     .profile-requests-item {
         text-align: left;
         list-style-type: none;
@@ -548,44 +554,52 @@ body {
                 background-color: transparent;
                 color: $main-color-9100ff;
             }
-            
+
         }
 
     }
-    .profile-requests-item:last-child{
+
+    .profile-requests-item:last-child {
         border-color: transparent;
     }
-    
+
 
 }
-.profile-follow-list-content{
+
+.profile-follow-list-content {
     display: table;
     width: 100%;
     margin-top: 20px;
     padding: 10px 3% 10px 3%;
-    .profile-follow-list-buttons{
+
+    .profile-follow-list-buttons {
         padding: 10px 0;
-        button{
+
+        button {
             background-color: transparent;
             border: none;
             color: $grey1;
             outline: none;
             cursor: pointer;
         }
-        button.tab-list-active{
+
+        button.tab-list-active {
             border-bottom: 1px solid $main-color-9100ff;
             color: $main-color-9100ff;
         }
     }
-    .profile-follow-list-tab{
+
+    .profile-follow-list-tab {
         display: none;
-        .profile-requests-item{
+
+        .profile-requests-item {
             overflow: hidden;
             box-sizing: border-box;
             width: 50%;
             height: 60px;
             float: left;
             margin: 15px 0;
+
             .popup-request-item-img-content {
                 float: left;
                 width: 13%;
@@ -597,12 +611,13 @@ body {
                     border-radius: 50%;
                 }
             }
+
             .popup-request-item-content {
                 padding-left: 10px;
                 float: left;
                 width: 55%;
                 font-size: 12px;
-                
+
 
 
                 p {
@@ -615,6 +630,7 @@ body {
                 width: 24%;
                 margin: 0 auto;
                 text-align: center;
+
                 button {
                     font-size: 12px;
                     display: inline-block;
@@ -626,29 +642,33 @@ body {
                     cursor: pointer;
                     border-radius: 15px;
                 }
-                a{
+
+                a {
                     text-decoration: underline;
                     color: $main-color-9100ff;
                     display: inline-block;
                     font-size: 12px;
                     padding: 0 10px;
                 }
-                p{
+
+                p {
                     font-size: 12px;
                     padding: 3px 10px;
                     display: inline-block;
-                    
-                }
-               
 
-                
+                }
+
+
+
             }
         }
     }
-    .profile-follow-list-tab-active{
+
+    .profile-follow-list-tab-active {
         display: block;
     }
-    .profile-load-more-btn{
+
+    .profile-load-more-btn {
         display: block;
         width: 100%;
         color: $grey1;
@@ -657,7 +677,8 @@ body {
         outline: none;
         background-color: transparent;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             background-color: white;
             color: $main-color-9100ff;
             box-shadow: $box-sahdow1;
@@ -665,28 +686,32 @@ body {
         }
     }
 }
-.profile-images-tab{
-  
+
+.profile-images-tab {
+
     margin-top: 15px;
-    .profile-images-item{
+
+    .profile-images-item {
         overflow: hidden;
         width: 33.333%;
         box-sizing: border-box;
         padding: 4px;
         display: inline-flex;
-        .profile-images-item-img{
+
+        .profile-images-item-img {
             overflow: hidden;
             width: 100%;
             border-radius: 10px;
             height: 180px;
-            
-            .profile-images-item-overlay{
+
+            .profile-images-item-overlay {
                 transition: 0.2s ease-in-out;
                 position: relative;
                 display: block;
                 opacity: 0;
                 height: 100%;
-                .profile-images-full-btn{
+
+                .profile-images-full-btn {
                     background-color: transparent;
                     border: none;
                     outline: none;
@@ -696,36 +721,42 @@ body {
                     top: 0;
                     width: 40px;
                     height: 40px;
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-                .profile-images-overlay-info{
+
+                .profile-images-overlay-info {
                     position: absolute;
                     bottom: 0;
                     left: 0;
                     right: 0;
                     height: 40px;
                     background-color: rgba(255, 255, 255, 0.589);
-                    .profile-images-overlay-info-left{
+
+                    .profile-images-overlay-info-left {
                         float: left;
-                        p{
-                            
+
+                        p {
+
                             display: inline-flex;
                             height: 40px;
                             line-height: 40px;
                             margin: 0;
                             padding: 0 7px;
-                            img{
+
+                            img {
                                 width: 16px;
                                 height: auto;
                                 margin-right: 5px;
-                                
+
                             }
                         }
                     }
-                    >button.edit-profile-btn{
+
+                    >button.edit-profile-btn {
                         margin-right: 5px;
                         float: right;
                         height: 40px;
@@ -737,7 +768,8 @@ body {
                         text-decoration: underline;
                         color: $dark-2b2b2b;
                     }
-                    >button.edit-profile-mystar{
+
+                    >button.edit-profile-mystar {
                         padding: 0 3%;
                         float: right;
                         height: 40px;
@@ -750,12 +782,14 @@ body {
                     }
                 }
             }
-            &:hover .profile-images-item-overlay{
+
+            &:hover .profile-images-item-overlay {
                 opacity: 1;
             }
         }
     }
-    .show-more-images{
+
+    .show-more-images {
         display: block;
         width: 100%;
         color: $grey1;
@@ -764,7 +798,8 @@ body {
         outline: none;
         background-color: transparent;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             background-color: white;
             color: $main-color-9100ff;
             box-shadow: $box-sahdow1;
@@ -772,41 +807,49 @@ body {
         }
     }
 }
+
 /* my profile  end */
 
 /* earn money  start */
 
-.earn-money-content{
+.earn-money-content {
     padding-top: 55px;
     display: table;
     width: 100%;
-    .earn-money-title{
+
+    .earn-money-title {
         margin: 20px 0;
         font-size: 18px;
         padding-left: 2%;
     }
-    .earn-money-item{
+
+    .earn-money-item {
         width: 50%;
         padding: 9px;
         float: left;
-        .earn-money-item-content{
+
+        .earn-money-item-content {
             box-shadow: $box-sahdow2;
             width: 100%;
             border-radius: 14px;
             display: table;
             overflow: hidden;
-            .earn-money-images{
+
+            .earn-money-images {
                 width: 100%;
                 height: 130px;
             }
-            .earn-money-information{
+
+            .earn-money-information {
                 padding: 10px 4%;
-                h6{
+
+                h6 {
                     margin: 0;
                     font-size: 15px;
                     color: $dark-2b2b2b;
                 }
-                p{
+
+                p {
                     margin: 0;
                     font-size: 12px;
                     color: $dark-888888;
@@ -820,45 +863,89 @@ body {
 
 /* ads show all  start */
 
-.ads-show-all-content{
-    padding-top: 55px;
+.ads-show-all-content {
+    padding-top: 60px;
     display: table;
     width: 100%;
-    
-    .ads-show-all-item{
+
+    .ads-show-all-filtrate {
+        padding: 40px 1%;
+
+        .ads-show-all-filter {
+            width: 75%;
+            float: left;
+
+            .ads-filter-label {
+                float: left;
+                display: inline-flex;
+                width: 25%;
+                color: $dark-2b2b2b;
+                font-size: 14px;
+                line-height: 30px;
+            }
+
+            .bootstrap-tagsinput {
+                display: inline-flex;
+                width: 70%;
+                background-color: white;
+            }
+
+        }
+
+        select {
+            border-radius: 27px;
+            border: 1px solid #d8d8d8;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 5px 15px;
+            color: $dark-888888;
+            font-size: 12px;
+            width: 25%;
+            outline: none;
+        }
+    }
+
+    .ads-show-all-item {
         width: 33.3333%;
         padding: 9px;
         float: left;
-        .ads-show-all-item-content{
+
+        .ads-show-all-item-content {
             box-shadow: $box-sahdow2;
             width: 100%;
             border-radius: 14px;
             display: table;
             overflow: hidden;
-            .ads-show-all-images{
+
+            .ads-show-all-images {
                 width: 100%;
                 height: 150px;
             }
-            .ads-show-all-information{
+
+            .ads-show-all-information {
                 padding: 10px 4%;
-                h6{
+
+                h6 {
                     margin: 0;
                     font-size: 15px;
                     color: $dark-2b2b2b;
                 }
-                p{
+
+                p {
                     margin: 20px 0;
                     font-size: 12px;
                     color: $dark-888888;
                 }
-                button.ads-my-star-btn{
+
+                button.ads-my-star-btn {
                     border: none;
                     outline: none;
                     background-color: transparent;
                     color: $dark-2b2b2b;
                     font-size: 13px;
                     cursor: pointer;
-                    img{
+
+                    img {
                         width: 18px;
                         height: 18px;
                     }
