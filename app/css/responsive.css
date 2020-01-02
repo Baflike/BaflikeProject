@@ -106,6 +106,21 @@
     .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput{
         width: 70%;
     }
+    .my-profile-content .profile-top .profile-panel-tab .profile-panel-left {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .my-profile-content .profile-top .profile-panel-tab .profile-panel-right {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
  }
 
  /* Extra Small Devices, Phones */
@@ -194,20 +209,7 @@
          width: 100%;
      }
 
-     .my-profile-content .profile-top .profile-panel-tab .profile-panel-left {
-         float: none;
-         display: block;
-         width: 100%;
-         text-align: center;
-         padding-top: 15px;
-     }
-
-     .my-profile-content .profile-top .profile-panel-tab .profile-panel-right {
-         float: none;
-         display: block;
-         width: 100%;
-         text-align: center;
-     }
+    
 
      .earn-money-content .earn-money-item {
          width: 100%;
