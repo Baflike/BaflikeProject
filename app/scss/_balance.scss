@@ -1,0 +1,136 @@
+.balance{
+    margin-top: 15px;
+    .balance_header{
+        display: flex;
+        justify-content: space-around;
+        .balance_header_item{
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            p{
+                color: #9100ff;
+                font-size: 13px;
+                margin-bottom: 3px;
+            }
+            span{
+                color: #9100ff;
+                font-size: 13px;
+            }
+        }
+    }
+    .total_earnings{
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+        p{
+            color: #9100ff;
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+        span{
+            color: #9100ff;
+            font-size: 13px;
+        }
+    }
+    .public_key_private_key{
+        margin-top: 25px;
+        .public_key{
+            margin-bottom: 8px;
+            p{
+                font-size: 13px;
+                margin-bottom: 3px;
+                span{
+                    margin-left: 20px;
+                    font-size: 13px;
+                }
+            }
+            
+           
+        }
+        .private_key{
+            p{
+                font-size: 13px;
+                margin-bottom: 3px;
+                span{
+                    margin-left: 20px;
+                    font-size: 13px;
+                }
+            }
+            
+        }
+    }
+    .money_transfer{
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        .money_transfer_header{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gainsboro;
+            padding: 0px 10px 8px 10px;
+            p{
+                font-size: 14px;
+                color: #9100ff;
+                margin-bottom: 0px;
+            }
+            img{
+                width: 15px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+            .money_transfer_header_minus{
+                display: block;
+            }
+            .money_transfer_header_plus{
+                display: none;
+            }
+        }
+        .money_transfer_footer{
+            display: flex;
+            justify-content: space-between;
+            .money_transfer_footer_left{
+                .money_transfer_footer_left_item{
+                    margin-top: 5px;
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                    select{
+                        border-radius: 50px;
+                        font-size: 12px;
+                    }
+                    input{
+                        border-radius: 50px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .money_transfer_footer_right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .money_transfer_footer_right_item{
+                    margin-top: 5px;
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                    input{
+                        border-radius: 50px;
+                        font-size: 12px;
+                    }
+                    button{
+                        border-radius: 50px;
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

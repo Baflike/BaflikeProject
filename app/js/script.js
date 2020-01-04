@@ -1,4 +1,21 @@
 $(document).ready(function () {
+    var minus = '../img/minus.png';
+    var plus = '../img/plus.png';
+
+    $(".money_transfer_header img").click(function () {
+        if ($(".money_transfer_header_minus").css("display") === "block") {
+            $('.money_transfer_header_minus').css('display', "none");
+            $('.money_transfer_header_plus').css('display', "block");
+            $('.money_transfer_footer').css('display', "none");
+
+
+        } else {
+            $('.money_transfer_header_minus').css('display', "block");
+            $('.money_transfer_header_plus').css('display', "none");
+            $('.money_transfer_footer').css('display', "flex");
+
+        }
+    });
 
     //  right panel tab start
     $(".right-panel-link-item button").click(function () {

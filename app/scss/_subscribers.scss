@@ -1,10 +1,37 @@
 .subscribers{
-    .subscribers_header{
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
 
+    .subscribers_header{
+        p{
+            color: #9100ff;
+        }
+        .search{
+            position: relative;
+            margin-bottom: 8px;
+            img{
+                width: 15px;
+                position: absolute;
+                z-index: 999;
+                left: 10px;
+                top: 10px;
+            }
+            input{
+                width: 45%;
+                border-radius: 50px;
+                background: #ebebeb;
+                font-size: 13px;
+                padding-left: 32px;
+            }
+        }
+        
         .subscribers_header_bottom{
             display: flex;
             p{
-                color: gray;
+                color: #bcbcbc;
+                font-size: 14px;
                 margin: 10px 20px 5px 0px;
             }
         }
@@ -14,15 +41,19 @@
             tr{
                 th:first-child{
                     padding: 10px 80px 10px 0px;
+                    font-size: 14px;
                 }
                 th{
-                    border-bottom: 1px solid gray;
+                    border-bottom: 1px solid #dfdfdf;
                     color: blue;
                     padding: 10px 40px 10px 0px;
+                    font-size: 14px;
+                    font-weight: 600;
                 }
                 td{
-                    border-bottom: 1px solid gray;
+                    border-bottom: 1px solid #dfdfdf;
                     padding: 10px 40px 10px 0px;
+                    font-size: 14px;
                 }
             }
         }
