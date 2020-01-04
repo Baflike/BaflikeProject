@@ -37,6 +37,7 @@
     }
     .public_key_private_key{
         margin-top: 25px;
+        padding: 10px 20px;
         .public_key{
             margin-bottom: 8px;
             p{
@@ -94,6 +95,7 @@
             display: flex;
             justify-content: space-between;
             .money_transfer_footer_left{
+                width: 40%;
                 .money_transfer_footer_left_item{
                     margin-top: 5px;
                     label{
@@ -114,6 +116,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                width: 40%;
                 .money_transfer_footer_right_item{
                     margin-top: 5px;
                     label{
@@ -131,6 +134,206 @@
                     }
                 }
             }
+        }
+    }
+    .add_fund{
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        .add_fund_header{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gainsboro;
+            padding: 0px 10px 8px 10px;
+            p{
+                font-size: 14px;
+                color: #9100ff;
+                margin-bottom: 0px;
+            }
+            img{
+                width: 15px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+            .add_fund_header_minus{
+                display: block;
+            }
+            .add_fund_header_plus{
+                display: none;
+            }
+        }
+        .add_fund_footer{
+            // display: flex;
+            // justify-content: space-between;
+            .add_fund_footer_top{
+                padding: 10px 10px;
+                p{
+                    font-size: 13px;
+                    margin-bottom: 0px;
+                }
+            }
+            .add_fund_footer_bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                .add_fund_footer_bottom_left{
+                    margin-top: 5px;
+                    width: 40%;
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                    input{
+                        border-radius: 50px;
+                        font-size: 12px;
+                    }
+                }
+                .add_fund_footer_bottom_right{
+                    margin-top: 5px;
+                    width: 40%;
+                    button{
+                        border-radius: 50px;
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .with_drow{
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        .with_drow_header{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gainsboro;
+            padding: 0px 10px 8px 10px;
+            p{
+                font-size: 14px;
+                color: #9100ff;
+                margin-bottom: 0px;
+            }
+            img{
+                width: 15px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+            .with_drow_header_minus{
+                display: block;
+            }
+            .with_drow_header_plus{
+                display: none;
+            }
+        }
+        .with_drow_footer{
+            // display: flex;
+            // justify-content: space-between;
+            .with_drow_footer_top{
+                padding: 10px 10px;
+                p{
+                    font-size: 13px;
+                    margin-bottom: 0px;
+                }
+            }
+            .with_drow_footer_bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                .with_drow_footer_bottom_left{
+                    margin-top: 5px;
+                    width: 40%;
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                    input{
+                        border-radius: 50px;
+                        font-size: 12px;
+                    }
+                }
+                .with_drow_footer_bottom_right{
+                    margin-top: 5px;
+                    width: 40%;
+                    button{
+                        border-radius: 50px;
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .change_point{
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        .change_point_header{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gainsboro;
+            padding: 0px 10px 8px 10px;
+            p{
+                font-size: 14px;
+                color: #9100ff;
+                margin-bottom: 0px;
+            }
+            img{
+                width: 15px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+            .change_point_header_minus{
+                display: block;
+            }
+            .change_point_header_plus{
+                display: none;
+            }
+        }
+        .change_point_footer{
+            
+        }
+    }
+
+
+    .statistic{
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        .statistic_header{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gainsboro;
+            padding: 0px 10px 8px 10px;
+            p{
+                font-size: 14px;
+                color: #9100ff;
+                margin-bottom: 0px;
+            }
+            img{
+                width: 15px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+            .statistic_header_minus{
+                display: block;
+            }
+            .statistic_header_plus{
+                display: none;
+            }
+        }
+        .statistic_footer{
+            
         }
     }
 }
