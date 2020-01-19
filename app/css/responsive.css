@@ -17,9 +17,59 @@
      }
  }
 
+ @media only screen and (max-width: 1070px) {
+     .popup-status-wrapper .popup-status-content .popup-status-item-content .popup-status-item-wrapper .popup-status-item {
+         height: 380px;
+     }
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-top .my-profile-form-wallet-btn {
+         width: 30%;
+
+     }
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-top .profile-input-adwcash {
+         width: 40%;
+     }
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-top .profile-input-name {
+         width: 24%;
+     }
+ }
+
  /* Medium Devices, Desktops */
 
  @media only screen and (max-width: 992px) {
+    .popup-my-profile-edit-overlay .popup-my-profile-edit-top{
+        padding-bottom: 20px;
+    }
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-top .my-profile-form-wallet-btn {
+         padding: 7px 0;
+         font-size: 14px;
+     }
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle{
+         display: table;
+     }
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle .popup-my-profile-edit-left{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 20px 0;
+     }
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle .popup-my-profile-edit-right{
+        width: 100%;
+        padding: 20px 0;
+     }
+
+     .popup-status-wrapper {
+         overflow-y: scroll;
+         align-items: flex-start;
+     }
+
+     .popup-status-wrapper .popup-status-content .popup-status-item-content .popup-status-item-wrapper {
+         width: 50%;
+
+     }
+
      .bf-form-control {
          width: 100% !important;
      }
@@ -32,10 +82,12 @@
          display: block;
          width: 250px;
      }
+
      .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter {
          width: 100%;
      }
-     .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput{
+
+     .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput {
          width: 75%;
      }
  }
@@ -52,10 +104,15 @@
          padding: 0 10px;
      }
 
-     .data-menu-none {
-         display: none;
+     .mobile-popup-index-box{
+         display: block;
      }
-
+     .data-menu-none {
+        display: none !important;
+    }
+    .mobile-body-scroll-hidden{
+        overflow: hidden;
+    }
      .panel-left {
          -webkit-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
          -moz-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
@@ -90,42 +147,77 @@
      .profile-follow-list-content .profile-follow-list-tab .profile-requests-item {
          width: 100%;
      }
-     .profile-images-tab .profile-images-item {
-        width: 50%;
-    }
 
-    .ads-show-all-content .ads-show-all-item{
-       width: 50%;
-    }
+     .profile-images-tab .profile-images-item {
+         width: 50%;
+     }
+
+     .ads-show-all-content .ads-show-all-item {
+         width: 50%;
+     }
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-top .my-profile-form-wallet-btn {
+         float: none;
+         width: 100%;
+     }
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-top .profile-input-adwcash {
+        float: none;
+        width: 100%;
+     }
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-top .profile-input-name {
+        float: none;
+        width: 100%;
+
+     }
+
  }
 
  @media only screen and (max-width: 560px) {
-    .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .ads-filter-label{
-        width: 30%;
-    }
-    .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput{
-        width: 70%;
-    }
-    .my-profile-content .profile-top .profile-panel-tab .profile-panel-left {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding-top: 15px;
-    }
+     .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .ads-filter-label {
+         width: 30%;
+     }
 
-    .my-profile-content .profile-top .profile-panel-tab .profile-panel-right {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
+     .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput {
+         width: 70%;
+     }
+
+     .my-profile-content .profile-top .profile-panel-tab .profile-panel-left {
+         float: none;
+         display: block;
+         width: 100%;
+         text-align: center;
+         padding-top: 15px;
+     }
+
+     .my-profile-content .profile-top .profile-panel-tab .profile-panel-right {
+         float: none;
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+
+     .popup-status-wrapper .popup-status-content .popup-status-item-content .popup-status-item-wrapper {
+         width: 100%;
+
+     }
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-content{
+         width: 80%;
+     }
+
+     /* .popup-status-wrapper .popup-status-content{
+        -ms-transform: translate(-50%, -15%);
+        transform: translate(-50%, -15%);
+        max-width: 80%;
+    } */
 
  }
 
  /* Extra Small Devices, Phones */
 
  @media only screen and (max-width: 480px) {
+
      .ranking-tab-people {
          overflow: auto;
          width: 100px;
@@ -209,14 +301,16 @@
          width: 100%;
      }
 
-    
+
 
      .earn-money-content .earn-money-item {
          width: 100%;
      }
-     .ads-show-all-content .ads-show-all-item{
-        width: 100%;
+
+     .ads-show-all-content .ads-show-all-item {
+         width: 100%;
      }
+
  }
 
  /* Custom, iPhone Retina */
