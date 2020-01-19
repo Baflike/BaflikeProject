@@ -11,7 +11,7 @@
 .panel-left {
     background-color: $white-fon-f9f9f9;
     box-shadow: $box-sahdow1;
-
+    overflow-y: auto;
     .left-panel-profile-content {
         padding: 20px 0;
         padding-left: 5%;
@@ -165,16 +165,7 @@
 .panel-right {
     box-shadow: $box-sahdow1;
 
-    .panel-msg-search-input{
-        width: 100%;
-        margin: 10px 0;
-        outline: none;
-        border: 1px solid $grey1;
-        background-color: transparent;
-        border-radius: 15px;
-        padding: 5px 10px;
-        font-size: 12px;
-    }
+    
     // .panel-msg-search-resault{
     //     position: absolute;
     //     // max-height: 300px;
@@ -241,7 +232,7 @@
 
                 a {
                     text-decoration: none;
-                    color: #545454;
+                    color: $dark-2b2b2b;
 
                 }
 
@@ -251,9 +242,8 @@
                     left: 0;
                     right: 0;
                     height: 50px;
-                    background-color: rgba(255, 255, 255, 0.555);
+                    background-color: rgba(255, 255, 255, 0.589);
                     font-size: 14px;
-                    backdrop-filter: blur(1px);
                     padding: 4px;
                     padding-left: 10px;
                     display: none;
@@ -266,13 +256,18 @@
                     }
 
                     img {
-                        height: 10px;
+                        height: 12px;
+                        width: 12px;
                     }
                 }
             }
         }
-
+        .right-panel-image-content{
+            padding: 10px 5%;
+        }
         .rignt-panel-follower-content {
+           
+            padding: 10px 5%;
             .right-panel-follwer-item {
                 border-bottom: 1px solid #EFEEF2;
                 display: table;
@@ -295,7 +290,7 @@
                 }
 
                 h6 {
-                    font-size: 2vh;
+                    font-size: 0.9vw;
                     font-weight: bold;
                     float: left;
                     padding: 13px 0;
@@ -313,18 +308,39 @@
         }
 
         .right-panel-content-item {
+            position: relative;
             box-sizing: border-box;
-            padding: 10px 5%;
+            
             display: none;
             min-height: 100%;
-            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 150px;
+            .right-panel-search-content{
+                position: sticky;
+                top: 0;
+                left: -5%;
+                right: 0;
+                background-color: $white-fon-f9f9f9;
+                padding: 0 5%;
+            }
+            
         }
 
         .right-panel-tab-active {
+           
             display: block;
-            
-
         }
+    }
+    .panel-msg-search-input{
+        width: 100%;
+        margin: 10px 0;
+        outline: none;
+        border: 1px solid $grey1;
+        background-color: transparent;
+        border-radius: 15px;
+        padding: 5px 10px;
+        font-size: 12px;
     }
 
 }

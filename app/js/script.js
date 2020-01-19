@@ -11,6 +11,8 @@ $(document).ready(function () {
     //  right panel tab end
 
 
+
+
     // statistic info start
     $(".ads-tablink").click(function () {
         var statistic_id = $(this).attr('data-bftab');
@@ -115,13 +117,15 @@ $(document).ready(function () {
     // //    friends popup start
     $(".left-panel-button-friends").click(function () {
         $(".popup-invite-friends").css({
-            display: "block"
+            display: "flex"
         });
+        $("body").css({overflow: "hidden"});
     });
     $(".popup-friends-cancel").click(function () {
         $(".popup-invite-friends").css({
             display: "none"
         });
+        $("body").css({overflow: "auto"});
     });
 
     $(".popup-friends-input").click(function () {
@@ -135,6 +139,37 @@ $(document).ready(function () {
 
     });
     // //    friends popup end
+    // //    my profile edit popup start
+    $(".profile-edit-btn").click(function () {
+        $(".popup-my-profile-edit-overlay").css({
+            display: "flex"
+        });
+        $("body").css({overflow: "hidden"});
+    });
+    $(".popup-my-profile-cancel").click(function () {
+        $(".popup-my-profile-edit-overlay").css({
+            display: "none"
+        });
+        $("body").css({overflow: "auto"});
+    });
+    // //    my profile edit popup end
+
+    // //    status popup start
+
+    $(".status-activate-button").click(function () {
+        $(".popup-status-wrapper").css({
+            display: "flex"
+        });
+        $("body").css({overflow: "hidden"});
+    });
+    $(".popup-status-cancel").click(function () {
+        $(".popup-status-wrapper").css({
+            display: "none"
+        });
+        $("body").css({overflow: "auto"});
+    });
+
+    // //    status popup end
 
     //   profile photos/followers tab activete start
 
@@ -234,8 +269,10 @@ $(document).ready(function () {
         if($("[data-contentmenu='" + mobilButtonData + "']").hasClass("data-menu-none")){
             $(".data-panel-menu").addClass("data-menu-none");
             $("[data-contentmenu='" + mobilButtonData + "']").removeClass("data-menu-none");
+            $("body").addClass("mobile-body-scroll-hidden");
         }else{
             $(".data-panel-menu").addClass("data-menu-none");
+            $("body").removeClass("mobile-body-scroll-hidden");
         }
     });
 
@@ -256,8 +293,8 @@ $(document).ready(function () {
            
         } else if (windowSize < 768) {
           
-            $(".header-mobile ul li button").removeClass("header-button-active");
-            $(".data-panel-menu").addClass("data-menu-none");
+            // $(".header-mobile ul li button").removeClass("header-button-active");
+            // $(".data-panel-menu").addClass("data-menu-none");
 
         }
 

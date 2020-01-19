@@ -20,7 +20,8 @@
     z-index: $index-popup;
     background-color: $popup-background;
     overflow: hidden;
-
+    align-items: center;
+    justify-content: center;
     .popup-friends-content {
         overflow: hidden;
         width: 22%;
@@ -29,12 +30,7 @@
         padding: 20px;
         display: table;
         text-align: center;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        position: relative;
 
         .popup-friends-cancel {
             position: absolute;
@@ -86,6 +82,128 @@
 }
 
 /* popup invite friends end */
+
+/* popup status  start */
+
+.popup-status-wrapper {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $index-popup;
+    background-color: $popup-background;
+    padding: 30px 0;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    .popup-status-content {
+        overflow: hidden;
+        width: 85%;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        display: table;
+        text-align: center;
+      
+
+        .popup-status-title {
+            padding: 15px 0;
+            font-size: 20px;
+        }
+        .popup-status-cancel {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+
+        .popup-status-item-content {
+            display: table;
+            width: 100%;
+
+            .popup-status-item-wrapper {
+                width: 25%;
+                float: left;
+                padding: 10px 1.5%;
+
+                .popup-status-item {
+                    padding: 15px;
+                    text-align: left;
+                    height: 340px;
+                    border: 1px solid $grrey2-EFEEF2;
+                    background-color: $white-fon-f9f9f9;
+                    box-shadow: $box-sahdow1;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    position: relative;
+                    .sts-bg-1{background-color: #9100ff;}
+                    .sts-bg-2{background-color: #948c8c;}
+                    .sts-bg-3{background-color: #ffa500;}
+                    .sts-bg-4{background-color: #ffd700;}
+                    .sts-cl-1{color: #9100ff;}
+                    .sts-cl-2{color: #948c8c;}
+                    .sts-cl-3{color: #ffa500;}
+                    .sts-cl-4{color: #ffd700;}
+                    .popup-status-item-title{
+                        font-weight: bold;
+                        font-size: 19px;
+                        margin-bottom: 4px;
+                    }
+                    span {
+                        display: inline-block;
+                        text-align: center;
+                        margin: 0 auto;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 0;
+                        right: 0;
+                    }
+                    button{
+                        display: inline-block;
+                        text-align: center;
+                        margin: 0 auto;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 0;
+                        right: 0;
+                        border: none;
+                        padding: 8px 25px;
+                        border-radius: 16px;
+                        color: white;
+                        font-size: 12px;
+                        outline: none;
+                        cursor: pointer;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            font-size: 13px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* popup status  end */
 
 .icon-like::before {
     content: url(../../dist/img/svg/like.svg);
@@ -341,7 +459,211 @@ body {
 /* home page end */
 
 /* my profile  start */
+.popup-my-profile-edit-overlay{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $index-popup;
+    background-color: $popup-background;
+    padding: 30px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: flex-start;
+    justify-content: center;
+    .popup-my-profile-cancel {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        svg{
+            width: 22px;
+            height: 22px;
+        }
+    }
+    .popup-my-profile-edit-top{
+        display: table;
+        width: 100%;
+        border-bottom: 1px solid $grrey3-e2e2e2;
+        .my-profile-form-wallet-btn{
+            border-radius: 20px;
+            background-color: white;
+            border: 1px solid $main-color-9100ff;
+            color: $main-color-9100ff;
+            padding: 5px 0;
+            margin-top: 19px;
+            width: 25% ;
+            float: right;
+        }
+        .profile-input-adwcash{
+            width: 44%;
+            margin-right: 3%;
+            float: left;
+            input{
+                width: 100%;
+            }
+        }
+        .profile-input-name{
+            width: 25%;
+            margin-right: 3%;
+            float: left;
+            input{
+                width: 100%;
+            }
+        }
+    }
+    .popup-my-profile-edit-middle{
+        display: flex;
+        width: 100%;
+        .popup-my-profile-edit-left{
+            padding: 20px 5% 0 0;
+            width: 50%;
+            border-right: 1px solid $grrey3-e2e2e2;
+        
+            .my-profile-popup-edit-left{
+                display: block;
+                width: 100%;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        .popup-my-profile-edit-right{
+            padding: 20px 0 0 5%;
+            width: 50%;
+            input{
+                width: 100%;
+            }   
+            select{
+                width: 100%;
+            }
+        }
+    }
+    .popup-my-profile-edit-content{
+        overflow: hidden;
+        width: 65%;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 40px 4%;
+        position: relative;
+        display: table;
+        .popup-my-profile-save-btn{
+            display: block;
+            margin: 35px auto 0 auto;
+            padding: 6px 0;
+            border-radius: 20px;
+            text-align: center;
+            width: 45%;
+            border: 1px solid $main-color-9100ff;
+            background-color: $main-color-9100ff;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .popup-my-profile-edit-title{
+            font-size: 23px;
+            font-weight: bold;
+            color: $dark-888888;
+            margin-bottom: 30px;
+        }
+        .my-profile-radio-content{
+            padding-top: 20px;
+            .my-profile-radio-container {
+                display: inline-block;
+                position: relative;
+                padding-left: 25px;
+                margin-bottom: 12px;
+                margin-right: 20px;
+                cursor: pointer;
+                font-size: 12px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                color: $dark-888888;
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
 
+                    &:checked~.checkmark:after {
+                        display: block;
+                    }
+
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 18px;
+                    width: 18px;
+                    background-color: white;
+                    border-radius: 50%;
+                    border: 1px solid #dbdbdb;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        top: 2px;
+                        left: 2px;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: $main-color-9100ff;
+                    }
+                }
+            }
+        }
+        .my-profile-form-select{
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            justify-content: space-between;
+            select{
+                width: 26%;
+            }
+            select:nth-last-child(2){
+                width: 37%;
+            }
+        }
+        .my-profile-form-group {
+            margin-bottom: 20px;
+           
+
+            .my-profile-form-label {
+                display: block;
+                font-size: 12px;
+                margin-bottom: 2px;
+                margin-left: 15px;
+                color: #888888;
+            }
+
+            .my-profile-form-control {
+                border-radius: 30px;
+                border: 1px solid #d8d8d8;
+                overflow: hidden;
+                box-sizing: border-box;
+                padding: 8px 15px;
+                color: $dark-2b2b2b;
+                font-size: 12px;
+                outline: none;
+            }
+        }
+
+    }
+}
 .my-profile-content {
     position: relative;
     display: table;
