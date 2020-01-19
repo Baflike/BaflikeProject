@@ -2168,3 +2168,25 @@ body {
 .display-block {
     display: block !important;
 }
+
+.pos_modal{
+    .modal-header{
+        position: relative;
+        padding: 0 !important;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+        button{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    .modal-body{
+        padding: 0 !important;
+        .post{
+            box-shadow: none !important;
+        }
+    }
+}

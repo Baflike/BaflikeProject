@@ -1,4 +1,52 @@
 $(document).ready(function () {
+    var minus = '../img/minus.png';
+    var plus = '../img/plus.png';
+
+    $(".money_transfer_header img").click(function () {
+        if ($(".money_transfer_header_minus").css("display") === "block") {
+            $('.money_transfer_header_minus').css('display', "none");
+            $('.money_transfer_header_plus').css('display', "block");
+            $('.money_transfer_footer').css('display', "none");
+
+
+        } else {
+            $('.money_transfer_header_minus').css('display', "block");
+            $('.money_transfer_header_plus').css('display', "none");
+            $('.money_transfer_footer').css('display', "flex");
+
+        }
+    });
+
+
+    $(".add_fund_header img").click(function () {
+        if ($(".add_fund_header_minus").css("display") === "block") {
+            $('.add_fund_header_minus').css('display', "none");
+            $('.add_fund_header_plus').css('display', "block");
+            $('.add_fund_footer').css('display', "none");
+
+
+        } else {
+            $('.add_fund_header_minus').css('display', "block");
+            $('.add_fund_header_plus').css('display', "none");
+            $('.add_fund_footer').css('display', "block");
+
+        }
+    });
+
+    $(".with_drow_header img").click(function () {
+        if ($(".with_drow_header_minus").css("display") === "block") {
+            $('.with_drow_header_minus').css('display', "none");
+            $('.with_drow_header_plus').css('display', "block");
+            $('.with_drow_footer').css('display', "none");
+
+
+        } else {
+            $('.with_drow_header_minus').css('display', "block");
+            $('.with_drow_header_plus').css('display', "none");
+            $('.with_drow_footer').css('display', "block");
+
+        }
+    });
 
     //  right panel tab start
     $(".right-panel-link-item button").click(function () {

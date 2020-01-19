@@ -389,7 +389,7 @@
             <div data-contentmenu="left-panel" class="panel-left data-panel-menu fixed-panel col-md-3 col-lg-2 p-0"
                 data-simplebar>
                 <div class="left-panel-profile-content">
-                    <a href="my-profile.html">
+                    <a href="#">
                         <div class="left-panel-profile-item">
                             <div class="left-panel-image img-cover"
                                 style="background-image: url(https://picsum.photos/id/365/900/600);"></div>
@@ -422,112 +422,138 @@
             </div>
             <div class="offset-sm-0 col-sm-12 offset-md-3 col-md-9 offset-lg-2 col-lg-5">
                 <div class="home-page-content">
-                    <div class="add_post">
-                        <div class="share_something">
-                            <div class="profile_icon">
-                                <div class="iconn" style="background-image: url(https://picsum.photos/id/365/900/600);">
-                                </div>
+                    <div class="balance">
+                        <div class="balance_header">
+                            <div class="balance_header_item">
+                                <p>Main Balance</p>
+                                <span>$0.0015</span>
                             </div>
-                            <textarea name="" placeholder="Share something..."></textarea>
-                        </div>
-                        <div class="add_post_bottom">
-                            <div class="file-input">
-                                <input type="file" name="file-input" id="file-input" class="file-input__input" />
-                                <label class="file-input__label" for="file-input">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera"
-                                        class="svg-inline--fa fa-camera fa-w-16" role="img"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z">
-                                        </path>
-                                    </svg>
-                                    <span>Add image</span></label>
+                            <div class="balance_header_item">
+                                <p>Ads Balance</p>
+                                <span>$0.0015</span>
                             </div>
-                            <div class="add_buttons">
-                                <div class="custom-selectbox">
-                                    <select>
-                                        <option value="0">Friends</option>
-                                        <option value="1">All</option>
-                                        <option value="2">Only me</option>
-                                        <option value="3">Public</option>
-                                    </select>
-                                </div>
-                                <button class="share">Share</button>
+                            <div class="balance_header_item">
+                                <p>Baf Points</p>
+                                <span>$0.0015</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="post">
-                        <div class="post_top">
-                            <div class="profile">
-                                <div class="profile_icon">
-                                    <div class="iconn"
-                                        style="background-image: url(https://picsum.photos/id/365/900/600);">
+                        <div class="total_earnings">
+                            <p>Total Earnings</p>
+                            <span>$0.0015</span>
+                        </div>
+                        <div class="public_key_private_key">
+                            <div class="public_key">
+                                <p>Public key: <span>1Bnup4hu3bk5nkvvy4m</span></p>
+                            </div>
+                            <div class="private_key">
+                                <p>Private key: <span>*********</span></p>
+                            </div>
+                        </div>
+                        <div class="money_transfer">
+                            <div class="money_transfer_header">
+                                <p>Money Transfer</p>
+                                <img class="money_transfer_header_minus" src="./img/minus.png" alt="">
+                                <img class="money_transfer_header_plus" src="./img/plus.png" alt="">
+                            </div>
+                            <div class="money_transfer_footer">
+
+                                <div class="money_transfer_footer_left">
+                                    <div class="money_transfer_footer_left_item">
+                                        <label>Select your wallet adress</label>
+                                        <select class="form-control" name="" id="">
+                                            <option value="">Ads Balance</option>
+                                            <option value="">Put Balance</option>
+                                        </select>
+                                    </div>
+                                    <div class="money_transfer_footer_left_item">
+                                        <label>$ Money</label>
+                                        <input class="form-control" type="text" placeholder="min 2$ - max 100$">
                                     </div>
                                 </div>
-                                <div class="text">
-                                    <div class="name">Name Surname</div>
-                                    <div class="status">2 hrs. Public</div>
-                                </div>
-                            </div>
-                            <div class="options">
-                                <div class="dropdown">
-                                    <button class=" " type="button" data-toggle="dropdown">
-                                        <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                            data-icon="ellipsis-h" width="20px"
-                                            class="svg-inline--fa fa-ellipsis-h fa-w-16" role="img"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path fill="gray"
-                                                d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z">
-                                            </path>
-                                        </svg></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Save</a></li>
-                                        <li><a href="#">Hide</a></li>
-                                        <li><a href="#">Report</a></li>
-                                        <li><a href="#">Unfollow</a></li>
 
-                                    </ul>
+
+                                <div class="money_transfer_footer_right">
+                                    <div class="money_transfer_footer_right_item">
+
+                                        <label>Receiver user referal ID</label>
+                                        <input class="form-control" type="text" placeholder="Lorem ipsum">
+                                    </div>
+                                    <div class="money_transfer_footer_right_item">
+                                        <button class="btn btn-outline-info">Send money</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="add_fund">
+                            <div class="add_fund_header">
+                                <p>Add Fund</p>
+                                <img class="add_fund_header_minus" src="./img/minus.png" alt="">
+                                <img class="add_fund_header_plus" src="./img/plus.png" alt="">
+                            </div>
+                            <div class="add_fund_footer">
+                                <div class="add_fund_footer_top">
+                                   <p>Add Money with ADVCASH to your ADS Wallet</p>
+                                </div>
+                                <div class="add_fund_footer_bottom">
+                                    <div class="add_fund_footer_bottom_left">
+                                        <label>$ Money</label>
+                                        <input class="form-control" type="text" placeholder="min 2$ - max 100$">
+                                    </div>
+                                    <div class="add_fund_footer_bottom_right">
+                                        <button class="btn btn-outline-info">Add money</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="post_content">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consectetur fuga
-                                corrupti recusandae eaque maxime quibusdam velit minus aut facilis ex. Dolore quis
-                                aspernatur et sed iusto. Hic, quia repellendus?
-                            </p>
-                            <img src="img/IMG-4692.JPG" alt="">
-                        </div>
-                        <div class="post_bottom">
-                            <div class="statistics">
-                                <div class="like">
-
-                                    <svg aria-hidden="true" width="20px" focusable="false" data-prefix="far" data-icon="thumbs-up"
-                                        class="svg-inline--fa fa-thumbs-up fa-w-16" role="img"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentColor"
-                                            d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z">
-                                        </path>
-                                    </svg>
-                                    <p>45</p>
+                        <div class="with_drow">
+                            <div class="with_drow_header">
+                                <p>Withdrow</p>
+                                <img class="with_drow_header_minus" src="./img/minus.png" alt="">
+                                <img class="with_drow_header_plus" src="./img/plus.png" alt="">
+                            </div>
+                            <div class="with_drow_footer">
+                                <div class="with_drow_footer_top">
+                                   <p>Please firstly create new Advcash wallet</p>
                                 </div>
-                                <div class="com_shr">
-                                    <span>10 comments</span>
-                                    <span>3 shares</span>
+                                <div class="with_drow_footer_bottom">
+                                    <div class="with_drow_footer_bottom_left">
+                                        <label>Advcash wallet email adress</label>
+                                        <input class="form-control" type="text" placeholder="min 2$ - max 100$">
+                                    </div>
+                                    <div class="with_drow_footer_bottom_right">
+                                        <button class="btn btn-outline-info">Create wallet</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="add_statis">
-                                <ul>
-                                    <li>Like</li>
-                                    <li>Comment</li>
-                                    <li>Share</li>
-                                </ul>
+                        </div>
+                        <div class="change_point">
+                            <div class="change_point_header">
+                                <p>Change Point</p>
+                                <img class="change_point_header_minus" src="./img/minus.png" alt="">
+                                <img class="change_point_header_plus" src="./img/plus.png" alt="">
+                            </div>
+                            <div class="change_point_footer">
+                               
+                            </div>
+                        </div>
+
+                        <div class="statistic">
+                            <div class="statistic_header">
+                                <p>Statistic</p>
+                                <img class="statistic_header_minus" src="./img/minus.png" alt="">
+                                <img class="statistic_header_plus" src="./img/plus.png" alt="">
+                            </div>
+                            <div class="statistic_footer">
+                               
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-            <div class=" col-md-3 col-lg-3">
+            <div class="col-md-3 col-lg-3">
                 <div class="suggested-ads">
                     <button class="sug-slider-next sug-slider-btn"><span>›</span></button>
                     <button class="sug-slider-prev sug-slider-btn"><span>‹</span></button>
@@ -750,11 +776,10 @@
     <script src="./js/bootstrap-tagsinput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-    <script src="js/selectbox.js"></script>
+    </script>
     <script src="./js/script.js"></script>
 </body>
 
