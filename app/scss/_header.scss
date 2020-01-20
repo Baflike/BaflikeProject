@@ -836,7 +836,37 @@
                             margin: 0 auto;
                         }
                     }
+                    >a >.btn-web-balance{
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        width: 35px;
+                        height: 35px;
+                        padding: 5px;
+                        outline: none;
+                        line-height: 35px;
+                        position: relative;
+                        svg {
+                            transform: scale(0.8);
+                            margin: 0 auto;
+                        }
+                        img {
+                            height: 20px;
+                            margin: 0;
+                            padding: 0;
+                        }
 
+                        span {
+                            display: block;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            height: 40px;
+                            overflow: hidden;
+                            box-sizing: border-box;
+                            white-space: nowrap;
+                            margin: 0 auto;
+                        }
+                    }
                     >button {
                         border: none;
                         background-color: transparent;
@@ -844,7 +874,6 @@
                         width: 35px;
                         height: 35px;
                         padding: 5px;
-                        // overflow: hidden;
                         outline: none;
                         line-height: 35px;
                         position: relative;
