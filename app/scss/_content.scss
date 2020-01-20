@@ -22,6 +22,7 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
+
     .popup-friends-content {
         overflow: hidden;
         width: 22%;
@@ -100,6 +101,7 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
+
     .popup-status-content {
         overflow: hidden;
         width: 85%;
@@ -109,12 +111,13 @@
         position: relative;
         display: table;
         text-align: center;
-      
+
 
         .popup-status-title {
             padding: 15px 0;
             font-size: 20px;
         }
+
         .popup-status-cancel {
             position: absolute;
             right: 8px;
@@ -146,19 +149,45 @@
                     border-radius: 12px;
                     overflow: hidden;
                     position: relative;
-                    .sts-bg-1{background-color: #9100ff;}
-                    .sts-bg-2{background-color: #948c8c;}
-                    .sts-bg-3{background-color: #ffa500;}
-                    .sts-bg-4{background-color: #ffd700;}
-                    .sts-cl-1{color: #9100ff;}
-                    .sts-cl-2{color: #948c8c;}
-                    .sts-cl-3{color: #ffa500;}
-                    .sts-cl-4{color: #ffd700;}
-                    .popup-status-item-title{
+
+                    .sts-bg-1 {
+                        background-color: #9100ff;
+                    }
+
+                    .sts-bg-2 {
+                        background-color: #948c8c;
+                    }
+
+                    .sts-bg-3 {
+                        background-color: #ffa500;
+                    }
+
+                    .sts-bg-4 {
+                        background-color: #ffd700;
+                    }
+
+                    .sts-cl-1 {
+                        color: #9100ff;
+                    }
+
+                    .sts-cl-2 {
+                        color: #948c8c;
+                    }
+
+                    .sts-cl-3 {
+                        color: #ffa500;
+                    }
+
+                    .sts-cl-4 {
+                        color: #ffd700;
+                    }
+
+                    .popup-status-item-title {
                         font-weight: bold;
                         font-size: 19px;
                         margin-bottom: 4px;
                     }
+
                     span {
                         display: inline-block;
                         text-align: center;
@@ -168,7 +197,8 @@
                         left: 0;
                         right: 0;
                     }
-                    button{
+
+                    button {
                         display: inline-block;
                         text-align: center;
                         margin: 0 auto;
@@ -459,7 +489,7 @@ body {
 /* home page end */
 
 /* my profile  start */
-.popup-my-profile-edit-overlay{
+.popup-my-profile-edit-overlay {
     display: none;
     position: fixed;
     left: 0;
@@ -475,6 +505,7 @@ body {
     overflow-y: auto;
     align-items: flex-start;
     justify-content: center;
+
     .popup-my-profile-cancel {
         position: absolute;
         right: 15px;
@@ -485,70 +516,84 @@ body {
         border: none;
         background-color: transparent;
         outline: none;
-        svg{
+
+        svg {
             width: 22px;
             height: 22px;
         }
     }
-    .popup-my-profile-edit-top{
+
+    .popup-my-profile-edit-top {
         display: table;
         width: 100%;
         border-bottom: 1px solid $grrey3-e2e2e2;
-        .my-profile-form-wallet-btn{
+
+        .my-profile-form-wallet-btn {
             border-radius: 20px;
             background-color: white;
             border: 1px solid $main-color-9100ff;
             color: $main-color-9100ff;
             padding: 5px 0;
             margin-top: 19px;
-            width: 25% ;
+            width: 25%;
             float: right;
         }
-        .profile-input-adwcash{
+
+        .profile-input-adwcash {
             width: 44%;
             margin-right: 3%;
             float: left;
-            input{
+
+            input {
                 width: 100%;
             }
         }
-        .profile-input-name{
+
+        .profile-input-name {
             width: 25%;
             margin-right: 3%;
             float: left;
-            input{
+
+            input {
                 width: 100%;
             }
         }
     }
-    .popup-my-profile-edit-middle{
+
+    .popup-my-profile-edit-middle {
         display: flex;
         width: 100%;
-        .popup-my-profile-edit-left{
+
+        .popup-my-profile-edit-left {
             padding: 20px 5% 0 0;
             width: 50%;
             border-right: 1px solid $grrey3-e2e2e2;
-        
-            .my-profile-popup-edit-left{
+
+            .my-profile-popup-edit-left {
                 display: block;
                 width: 100%;
-                input{
+
+                input {
                     width: 100%;
                 }
             }
         }
-        .popup-my-profile-edit-right{
+
+        .popup-my-profile-edit-right {
             padding: 20px 0 0 5%;
             width: 50%;
-            input{
+
+            input {
                 width: 100%;
-            }   
-            select{
+            }
+
+            select {
                 width: 100%;
             }
         }
     }
-    .popup-my-profile-edit-content{
+
+    .popup-my-profile-edit-content {
         overflow: hidden;
         width: 65%;
         background-color: $white;
@@ -556,7 +601,8 @@ body {
         padding: 40px 4%;
         position: relative;
         display: table;
-        .popup-my-profile-save-btn{
+
+        .popup-my-profile-save-btn {
             display: block;
             margin: 35px auto 0 auto;
             padding: 6px 0;
@@ -570,14 +616,17 @@ body {
             cursor: pointer;
             font-size: 15px;
         }
-        .popup-my-profile-edit-title{
+
+        .popup-my-profile-edit-title {
             font-size: 23px;
             font-weight: bold;
             color: $dark-888888;
             margin-bottom: 30px;
         }
-        .my-profile-radio-content{
+
+        .my-profile-radio-content {
             padding-top: 20px;
+
             .my-profile-radio-container {
                 display: inline-block;
                 position: relative;
@@ -591,6 +640,7 @@ body {
                 -ms-user-select: none;
                 user-select: none;
                 color: $dark-888888;
+
                 input {
                     position: absolute;
                     opacity: 0;
@@ -626,21 +676,25 @@ body {
                 }
             }
         }
-        .my-profile-form-select{
+
+        .my-profile-form-select {
             display: flex;
             overflow: hidden;
             width: 100%;
             justify-content: space-between;
-            select{
+
+            select {
                 width: 26%;
             }
-            select:nth-last-child(2){
+
+            select:nth-last-child(2) {
                 width: 37%;
             }
         }
+
         .my-profile-form-group {
             margin-bottom: 20px;
-           
+
 
             .my-profile-form-label {
                 display: block;
@@ -664,6 +718,7 @@ body {
 
     }
 }
+
 .my-profile-content {
     position: relative;
     display: table;
@@ -1278,17 +1333,21 @@ body {
 }
 
 /* ads show all  end */
-
+.suggested-ads-sticky {
+   
+}
+ 
 /* sugessted ads start */
 .suggested-ads {
-    margin-top: 70px;
+    
     overflow: hidden;
     box-sizing: border-box;
     background-color: $white;
     border-radius: 10px;
     padding: 13px 5%;
     box-shadow: $box-sahdow1;
-    position: relative;
+    position: sticky;
+    top: 70px;
 
     .sug-slider-btn {
         width: 40px;
@@ -2173,23 +2232,27 @@ body {
     display: block !important;
 }
 
-.pos_modal{
-    .modal-header{
+.pos_modal {
+    .modal-header {
         position: relative;
         padding: 0 !important;
         overflow: hidden;
-        img{
+
+        img {
             width: 100%;
         }
-        button{
+
+        button {
             position: absolute;
             right: 10px;
             top: 10px;
         }
     }
-    .modal-body{
+
+    .modal-body {
         padding: 0 !important;
-        .post{
+
+        .post {
             box-shadow: none !important;
         }
     }
