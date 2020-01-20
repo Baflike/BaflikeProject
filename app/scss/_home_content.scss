@@ -18,6 +18,11 @@
                     background-size: cover;
                     border-radius: 50%;
                     margin-right: 5px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
                 } 
             }
             textarea{
@@ -75,7 +80,7 @@
                   
                   .file-input__label svg {
                     height: 16px;
-                    margin-right: 4px;
+                    margin-right: 10px;
                   }
             
         }
@@ -93,6 +98,7 @@
     
     .select-selected {
         background-color: transparent;
+        width: 100px;
     }
     
     .select-selected:after {
@@ -138,6 +144,8 @@
         right: 0;
         z-index: 99;
         border-radius: 3px;
+        width: 100px;
+        border: 1px solid #e5e5e5;
         div{
             border: none !important;
 
@@ -150,17 +158,18 @@
     
     .select-items div:hover,
     .same-as-selected {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(141, 141, 141, 0.1);
     }
 
 }
 .post{
-    padding: 10px;
+    padding: 10px 0px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: -3px 3px 5px 1px rgba(51,51,51,.08);
     margin-top: 20px;
     .post_top{
+        padding: 0px 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -175,15 +184,21 @@
                     background-size: cover;
                     border-radius: 50%;
                     margin-right: 5px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
                 } 
             }
             .text{
-                margin-left: 20px;
+                margin-left: 10px;
                 .name{
                     font-size: 16px;
                 }
                 .status{
                     font-size: 12px;
+                    color: gray;
                 }
               
             }
@@ -199,14 +214,29 @@
                 z-index: 999999;
                 right: 0;
                 left: unset !important;
+                padding: 10px;
+                width: 300px;
+                border-radius: 10px;
                 li{
-                    border-bottom: 1px solid gray;
+                    border-bottom: 1px solid #c8c8c8;
                     padding: 10px;
-
+                    display: flex;
+                    flex-direction: column;
+                    
                     a{
                         text-decoration: none;
                         font-size: 14px;
                         color: gray;
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: 15px;
+                            margin-right: 8px;
+                        }
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #b8b8b8;
                     }
                     &:nth-last-child(1){
                         border: none;
@@ -217,34 +247,49 @@
     }
     .post_content{
         margin-top: 15px;
-        p{
-            font-size: 14px;
+        .post_content_description{
+            padding: 0px 10px;
+
+            p{
+                font-size: 14px;
+                color: #535353;
+            }
         }
+        
         img{
             width: 100%;
             height: auto;
         }
     }
     .post_bottom{
+        padding: 0px 10px;
         .statistics{
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
             padding-bottom: 10px;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid #d1d1d1;
             .like{
                 display: flex;
                 align-items: center;
+                color: gray;
+                img{
+                    width: 15px;
+                }
                 p{  
                     font-size: 15px;
                     margin-bottom: 0;
                     margin-left: 10px;
+                    color: gray;
                 }
             }
             .com_shr{
                 span{
-                    font-size: 15px;                    };
+                    font-size: 15px; 
+                    color: gray;
+                    margin-left: 8px;
+                   };
             }
         }
         .add_statis{
@@ -257,8 +302,16 @@
                 padding: 0;
                 display: flex;
                 li{
+                    display: flex;
+                    align-items: center;
+                    color: gray;
                     padding: 10px;
                     font-size: 15px;
+                    margin-right: 6px;
+                    img{
+                        width: 15px;
+                        margin-right: 6px;
+                    }
                 }
                 
             }
