@@ -491,7 +491,10 @@
         ul.popup-msg-inbox-content {
             padding: 0;
             color: $dark-2b2b2b;
-
+            display: block;
+            max-height: 260px;
+            overflow-y: auto;
+            overflow-x: hidden;
             .popup-msg-item {
                 text-align: left;
                 list-style-type: none;
@@ -557,8 +560,7 @@
             padding: 0;
             color: $dark-2b2b2b;
             display: block;
-            
-            max-height: 250px;
+            max-height: 260px;
             overflow-x: hidden;
             overflow-y: auto;
             
@@ -645,9 +647,11 @@
         ul.popup-notify-content {
             padding: 0;
             color: $dark-2b2b2b;
-            display: table;
             width: 100%;
-
+            display: block;
+            max-height: 260px;
+            overflow-y: auto;
+            overflow-x: hidden;
             .popup-notify-item {
                 text-align: left;
                 list-style-type: none;
