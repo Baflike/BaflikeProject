@@ -6,7 +6,9 @@
          height: 200px;
          overflow: hidden;
      }
-
+     .popup-messagebox-box-content{
+         width: 28%;
+     }
      .ads-button-content {
          border-top: 1px solid #EFEEF2;
      }
@@ -69,7 +71,10 @@
          width: 50%;
 
      }
-
+     .popup-messagebox-box-content{
+        width: 35%;
+        right: 6%;
+    }
      .bf-form-control {
          width: 100% !important;
      }
@@ -98,11 +103,24 @@
 
 
  /* Small Devices, Tablets */
-
+ @media only screen and (min-width: 768px){
+    .popup-messagebox-box-hide{
+        height: 40px;
+        width: 250px !important;
+    }
+ }
  @media only screen and (max-width: 768px) {
      .header {
          padding: 0 10px;
      }
+     .popup-messagebox-box-content{
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 55px;
+        box-shadow: none;
+        border-radius: 0px;
+    }
 
      .mobile-popup-index-box{
          display: block;

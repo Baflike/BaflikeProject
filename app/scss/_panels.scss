@@ -12,6 +12,7 @@
     background-color: $white-fon-f9f9f9;
     box-shadow: $box-sahdow1;
     overflow-y: auto;
+
     .left-panel-profile-content {
         padding: 20px 0;
         padding-left: 5%;
@@ -78,17 +79,19 @@
                 list-style-type: none;
                 border-bottom: 1px solid #E9E9E9;
                 transition: 0.2s ease-in-out;
-                &:hover{
+
+                &:hover {
                     -ms-box-shadow: -3px 3px 5px 1px rgba(51, 51, 51, 0.08);
                     -o-box-shadow: -3px 3px 5px 1px rgba(51, 51, 51, 0.08);
                     -webkit-box-shadow: -3px 3px 5px 1px rgba(51, 51, 51, 0.08);
                     -moz-box-shadow: -3px 3px 5px 1px rgba(51, 51, 51, 0.08);
                     box-shadow: -3px 3px 5px 1px rgba(51, 51, 51, 0.08);
-                    a{
+
+                    a {
                         color: $main-color-9100ff;
                     }
                 }
-                
+
                 a {
                     transition: 0.2s ease-in-out;
                     text-decoration: none;
@@ -109,7 +112,7 @@
     .left-panel-settings {
         padding: 10px 10%;
 
-        >a{
+        >a {
             color: $main-color-9100ff;
             text-decoration: none;
             font-size: 14px;
@@ -117,7 +120,8 @@
             margin-right: 7%;
             font-weight: bold;
         }
-        .language-button{
+
+        .language-button {
             color: $main-color-9100ff;
             text-decoration: none;
             font-size: 14px;
@@ -130,8 +134,12 @@
             background-color: transparent;
             outline: none;
             cursor: pointer;
-            &:hover .language-dropdown-content-overlay{display: block;}
-            .language-dropdown-content-overlay{
+
+            &:hover .language-dropdown-content-overlay {
+                display: block;
+            }
+
+            .language-dropdown-content-overlay {
                 display: none;
                 background-color: $white-fon-f9f9f9;
                 border: 1px solid #e9e9e9;
@@ -141,14 +149,16 @@
                 border-radius: 8px;
                 box-shadow: $box-sahdow2;
                 overflow: hidden;
-                a{
+
+                a {
                     transition: 0.2s ease-in-out;
                     text-decoration: none;
                     color: $main-color-9100ff;
                     display: block;
                     border-bottom: 1px solid #e9e9e9;
                     padding: 8px 10px;
-                    &:hover{
+
+                    &:hover {
                         background-color: white;
                     }
                 }
@@ -165,7 +175,7 @@
 .panel-right {
     box-shadow: $box-sahdow1;
 
-    
+
     // .panel-msg-search-resault{
     //     position: absolute;
     //     // max-height: 300px;
@@ -175,7 +185,7 @@
     //     bottom: 0;
     //     background-color: $grey-edge-F5F5F5;
     //     // display: block;
-       
+
     // }
     .right-panel-tab-links {
         width: 100%;
@@ -213,6 +223,7 @@
     .right-panel-tab-content {
         box-sizing: border-box;
         height: 90%;
+
         .ranking-image-item {
             display: table;
             width: 100%;
@@ -227,7 +238,7 @@
 
                 &:hover .ranking-img-overlay {
                     display: block;
-                    
+
                 }
 
                 a {
@@ -262,12 +273,16 @@
                 }
             }
         }
-        .right-panel-image-content{
+
+        .right-panel-image-content {
             padding: 10px 5%;
+
         }
+
         .rignt-panel-follower-content {
-           
+
             padding: 10px 5%;
+
             .right-panel-follwer-item {
                 border-bottom: 1px solid #EFEEF2;
                 display: table;
@@ -310,13 +325,14 @@
         .right-panel-content-item {
             position: relative;
             box-sizing: border-box;
-            
+            overscroll-behavior: contain;
             display: none;
             min-height: 100%;
             overflow-x: hidden;
             overflow-y: auto;
             height: 150px;
-            .right-panel-search-content{
+
+            .right-panel-search-content {
                 position: sticky;
                 top: 0;
                 left: -5%;
@@ -324,15 +340,16 @@
                 background-color: $white-fon-f9f9f9;
                 padding: 0 5%;
             }
-            
+
         }
 
         .right-panel-tab-active {
-           
+
             display: block;
         }
     }
-    .panel-msg-search-input{
+
+    .panel-msg-search-input {
         width: 100%;
         margin: 10px 0;
         outline: none;
