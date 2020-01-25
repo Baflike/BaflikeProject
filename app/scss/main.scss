@@ -41,7 +41,24 @@ $popup-background: rgba(71, 80, 90, 0.3);
 ::-webkit-scrollbar {
   width: 5px;
 }
-
+select {
+  -moz-appearance:none !important; /* Firefox */
+  -webkit-appearance:none !important; /* Safari and Chrome */
+  appearance:none !important;
+  background: url(../img/svg/arrow_down.png) no-repeat  right 10px top 40% #ddd !important;
+  outline: none;
+}
+.form-control{
+  border: 1px solid #ced4da !important;
+  background-color: #fff !important;
+}
+.form-control:focus {
+  color: #495057;
+  
+  border-color: #d8d8d8 !important ;
+  outline: 0;
+  box-shadow: none !important;
+}
 
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -53,7 +70,7 @@ $popup-background: rgba(71, 80, 90, 0.3);
   background: #cecece;
 
 }
-
+ 
 
 
 

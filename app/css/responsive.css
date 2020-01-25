@@ -95,6 +95,10 @@
      .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput {
          width: 75%;
      }
+     .popup-friends-content {
+        width: 50% !important;
+    }
+    
  }
 
  @media only screen and (min-width: 810px) {}
@@ -251,7 +255,9 @@
          display: flex;
          white-space: nowrap;
      }
-
+     .popup-friends-content {
+        width: 70% !important;
+    }
      .ranking-section .ranking-tablinks .ranking-tab-link {
          font-size: 14px;
      }

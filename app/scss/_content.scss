@@ -537,6 +537,15 @@ body {
             margin-top: 19px;
             width: 25%;
             float: right;
+            outline: none;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $main-color-9100ff;
+                color: white;
+
+            }
         }
 
         .profile-input-adwcash {
@@ -695,11 +704,12 @@ body {
         .my-profile-form-group {
             margin-bottom: 20px;
 
-            .password-see-content{
+            .password-see-content {
                 display: table;
                 width: 100%;
                 position: relative;
-                img{
+
+                img {
                     position: absolute;
                     right: 10px;
                     top: 12px;
@@ -707,6 +717,7 @@ body {
                     cursor: pointer;
                 }
             }
+
             .my-profile-form-label {
                 display: block;
                 font-size: 12px;
@@ -724,7 +735,7 @@ body {
                 color: $dark-2b2b2b;
                 font-size: 12px;
                 outline: none;
-                
+                background-color: white;
             }
         }
 
@@ -1163,7 +1174,7 @@ body {
                         float: right;
                         height: 40px;
                         font-size: 12px;
-                        background-color: white;
+                        background-color: #ffffff87;
                         outline: none;
                         cursor: pointer;
                         border: none;
@@ -1291,6 +1302,7 @@ body {
             font-size: 12px;
             width: 25%;
             outline: none;
+            background-color: white !important;
         }
     }
 
@@ -1345,13 +1357,11 @@ body {
 }
 
 /* ads show all  end */
-.suggested-ads-sticky {
-   
-}
- 
+.suggested-ads-sticky {}
+
 /* sugessted ads start */
 .suggested-ads {
-    
+
     overflow: hidden;
     box-sizing: border-box;
     background-color: $white;
@@ -1437,12 +1447,13 @@ body {
             width: 100%;
             height: 150px;
             margin: 10px 0px;
-            img{
+
+            img {
                 height: 100%;
                 object-fit: cover;
             }
         }
-        
+
 
         h6 {
             font-size: 12px;
@@ -1751,7 +1762,7 @@ body {
 /* advertisement add start */
 .ads-add-section {
     margin-top: 55px;
-    padding: 10px;
+    padding: 15px 0;
 
     .ads-add-content {
         overflow: hidden;
@@ -2098,12 +2109,14 @@ body {
 
                 select {
                     float: right;
-                    border: 1px solid #efeef2;
                     border-radius: 27px;
                     color: #a6a7a8;
                     font-size: 14px;
                     padding: 6px 20px;
                     margin-left: 20px;
+                    border: 1px solid #ced4da !important;
+                    background-color: #fff !important;
+                    
                 }
             }
 
@@ -2275,19 +2288,19 @@ body {
     position: relative;
     font-family: Arial;
     width: 100%;
-  }
-  
-  .custom-selectbox select {
+}
+
+.custom-selectbox select {
     display: none;
-  }
-  
-    
-  .select-selected {
+}
+
+
+.select-selected {
     background-color: transparent;
     width: 100px;
-  }
-  
-  .select-selected:after {
+}
+
+.select-selected:after {
     position: absolute;
     content: "";
     top: 14px;
@@ -2296,15 +2309,15 @@ body {
     height: 0;
     border: 6px solid transparent;
     border-color: #dfdfdf transparent transparent transparent;
-  }
-  
-  .select-selected.select-arrow-active:after {
+}
+
+.select-selected.select-arrow-active:after {
     border-color: transparent transparent #dfdfdf transparent;
     top: 7px;
-  }
-  
-  .select-items div,
-  .select-selected {
+}
+
+.select-items div,
+.select-selected {
     font-family: Averta;
     font-size: 12px;
     font-weight: normal;
@@ -2320,9 +2333,9 @@ body {
     // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
     user-select: none;
-  }
-  
-  .select-items {
+}
+
+.select-items {
     position: absolute;
     background-color: #fff;
     top: 100%;
@@ -2332,17 +2345,18 @@ body {
     border-radius: 3px;
     width: 100px;
     border: 1px solid #e5e5e5;
-    div{
+
+    div {
         border: none !important;
-  
+
     }
-  }
-  
-  .select-hide {
+}
+
+.select-hide {
     display: none;
-  }
-  
-  .select-items div:hover,
-  .same-as-selected {
+}
+
+.select-items div:hover,
+.same-as-selected {
     background-color: rgba(141, 141, 141, 0.1);
-  }
+}
