@@ -1,4 +1,11 @@
 $(document).ready(function () {
+
+    $(".add_statis .like_btn").click(function(){
+        $(".comments").toggle();
+      });
+
+
+
     var minus = '../img/minus.png';
     var plus = '../img/plus.png';
 
