@@ -1283,11 +1283,12 @@ body {
                 font-size: 14px;
                 line-height: 30px;
             }
-
+ 
             .bootstrap-tagsinput {
-                display: inline-flex;
+                display: flex;
                 width: 70%;
                 background-color: white;
+                flex-wrap: wrap;
             }
 
         }
@@ -2020,6 +2021,7 @@ body {
     font-size: 12px;
     display: inline-block;
     color: #f5f5f5;
+    word-wrap: break-word;
 }
 
 .bootstrap-tagsinput .tag [data-role="remove"] {

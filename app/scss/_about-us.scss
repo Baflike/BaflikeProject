@@ -1,3 +1,4 @@
+
 .header-register {
     width: 100%;
 
@@ -18,7 +19,6 @@
         .header-web-button{
             border-radius: 50px;
             font-size: 14px;
-            
             background-color:#9100ff;
             border: 1px solid  #9100ff;
             color: white;
@@ -207,7 +207,24 @@
     }
 }
 
-
+@media only screen and (max-width: 480px) {
+    // .header-web {
+    //     display: block !important;
+    //     justify-content: space-between;
+    //     padding: 10px 20px;
+    // }
+    .header-log-in {
+        margin-top: 15px;
+        display: block !important;
+        align-items: flex-end;
+    }
+    .header-web {
+        .header-web-button{
+            padding: 5px 9% !important;
+            margin-top: 10px;
+        }
+    }
+}
 @media only screen and (max-width: 400px) {
     .header-register {
         .header-web {
