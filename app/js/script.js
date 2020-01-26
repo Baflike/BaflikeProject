@@ -54,7 +54,6 @@ $(document).ready(function () {
 
         }
     });
-
     //  right panel tab start
     $(".right-panel-link-item button").click(function () {
         var leftpanel_id = $(this).attr('data-righttablink');
@@ -65,7 +64,33 @@ $(document).ready(function () {
     });
     //  right panel tab end
 
+    //  messagebox popup start
 
+    $(".popup-messagebox-box-top").click(function () {
+        $(".popup-messagebox-box-content").toggleClass("popup-messagebox-box-hide");
+    });
+    $(".popup-messagebox-box-top img").click(function () {
+        $(".popup-messagebox-box-content").css({
+            "display": "none"
+        });
+    });
+
+    //  messagebox popup end
+
+    $(document)
+        .one('focus.autoExpand', 'textarea.autoExpand', function () {
+            var savedValue = this.value;
+            this.value = '';
+            this.baseScrollHeight = this.scrollHeight;
+            this.value = savedValue;
+        })
+        .on('input.autoExpand', 'textarea.autoExpand', function () {
+            var minRows = this.getAttribute('data-min-rows') | -1,
+                rows;
+            this.rows = minRows;
+            rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 16);
+            this.rows = minRows + rows;
+        });
 
 
     // statistic info start
@@ -107,26 +132,26 @@ $(document).ready(function () {
     var suggestedAds = $(".sug-owl-carousel");
     suggestedAds.owlCarousel({
 
-        items:1,
-        loop:true,
-        center:true,
-        nav:false,
+        items: 1,
+        loop: true,
+        center: true,
+        nav: false,
         singleItem: true,
-        dots:false,
-        margin:3,
-        stagePadding:0,
-        smartSpeed:2000,
-        
-       
-   });
-   $('.sug-slider-next').click(function() {
-    suggestedAds.trigger('next.owl.carousel');
-    })
-    $('.sug-slider-prev').click(function() {
-        suggestedAds.trigger('prev.owl.carousel');
-        })
+        dots: false,
+        margin: 3,
+        stagePadding: 0,
+        smartSpeed: 2000,
 
-   // owl carousel code
+
+    });
+    $('.sug-slider-next').click(function () {
+        suggestedAds.trigger('next.owl.carousel');
+    })
+    $('.sug-slider-prev').click(function () {
+        suggestedAds.trigger('prev.owl.carousel');
+    })
+
+    // owl carousel code
 
 
     //    ranking tab active start
@@ -174,13 +199,17 @@ $(document).ready(function () {
         $(".popup-invite-friends").css({
             display: "flex"
         });
-        $("body").css({overflow: "hidden"});
+        $("body").css({
+            overflow: "hidden"
+        });
     });
     $(".popup-friends-cancel").click(function () {
         $(".popup-invite-friends").css({
             display: "none"
         });
-        $("body").css({overflow: "auto"});
+        $("body").css({
+            overflow: "auto"
+        });
     });
 
     $(".popup-friends-input").click(function () {
@@ -199,13 +228,17 @@ $(document).ready(function () {
         $(".popup-my-profile-edit-overlay").css({
             display: "flex"
         });
-        $("body").css({overflow: "hidden"});
+        $("body").css({
+            overflow: "hidden"
+        });
     });
     $(".popup-my-profile-cancel").click(function () {
         $(".popup-my-profile-edit-overlay").css({
             display: "none"
         });
-        $("body").css({overflow: "auto"});
+        $("body").css({
+            overflow: "auto"
+        });
     });
     // //    my profile edit popup end
 
@@ -215,20 +248,24 @@ $(document).ready(function () {
         $(".popup-status-wrapper").css({
             display: "flex"
         });
-        $("body").css({overflow: "hidden"});
+        $("body").css({
+            overflow: "hidden"
+        });
     });
     $(".popup-status-cancel").click(function () {
         $(".popup-status-wrapper").css({
             display: "none"
         });
-        $("body").css({overflow: "auto"});
+        $("body").css({
+            overflow: "auto"
+        });
     });
 
     // //    status popup end
 
     //   profile photos/followers tab activete start
 
-    $(".profile-panel-left button").click(function(){
+    $(".profile-panel-left button").click(function () {
         var data_profilebtndata = $(this).attr('data-profilebtn');
         $(".profileContent").removeClass("profileContentActive");
         $(".profile-panel-left button").removeClass("active-button");
@@ -240,31 +277,31 @@ $(document).ready(function () {
     //   profile photos/followers tab activete end
 
 
-        //   profile photos/followers tab activete start
+    //   profile photos/followers tab activete start
 
-        $(".profile-follow-list-buttons button").click(function(){
-            var data_profilebtndata = $(this).attr('data-profilebtn');
-            $(".profile-follow-list-tab").removeClass("profile-follow-list-tab-active");
-            $(".profile-follow-list-buttons button").removeClass("tab-list-active");
-            $(this).addClass("tab-list-active");
-            $("[data-profilecontent='" + data_profilebtndata + "']").addClass("profile-follow-list-tab-active");
-        });
-    
-    
-        //   profile photos/followers tab activete end
+    $(".profile-follow-list-buttons button").click(function () {
+        var data_profilebtndata = $(this).attr('data-profilebtn');
+        $(".profile-follow-list-tab").removeClass("profile-follow-list-tab-active");
+        $(".profile-follow-list-buttons button").removeClass("tab-list-active");
+        $(this).addClass("tab-list-active");
+        $("[data-profilecontent='" + data_profilebtndata + "']").addClass("profile-follow-list-tab-active");
+    });
+
+
+    //   profile photos/followers tab activete end
 
     //    header-icon active start
     $(".header-web-button").click(function () {
         var checked_class_header_icon = $(this).hasClass("header-button-active");
         var checked_class_profile_icon = $(this).hasClass("header-profile-content");
         var checked_class_arrow = $(this).hasClass("button-active-arrow");
-        if(checked_class_profile_icon == true){
+        if (checked_class_profile_icon == true) {
             $(".header-icon-panel ul li button").removeClass("header-button-active");
             $(".header-icon-panel ul li button").removeClass("button-active-arrow");
-        }else if (checked_class_header_icon == true && checked_class_arrow == true ) {
+        } else if (checked_class_header_icon == true && checked_class_arrow == true) {
             $(this).removeClass("header-button-active");
             $(this).removeClass("button-active-arrow");
-            
+
         } else {
             $(".header-icon-panel ul li button").removeClass("header-button-active");
             $(".header-icon-panel ul li button").removeClass("button-active-arrow");
@@ -279,15 +316,15 @@ $(document).ready(function () {
     $(".header-mobile-button").click(function () {
         var checked_class_profile_icon = $(this).hasClass("header-profile-content");
         var checked_class_header_icon = $(this).hasClass("header-button-active");
-        if(checked_class_profile_icon == true){
+        if (checked_class_profile_icon == true) {
             $(".header-mobile ul li button").removeClass("header-button-active");
-         
-        }else if (checked_class_header_icon == true) {
+
+        } else if (checked_class_header_icon == true) {
             $(this).removeClass("header-button-active")
         } else {
             $(".header-mobile ul li button").removeClass("header-button-active");
             $(this).addClass("header-button-active");
-            
+
         }
 
 
@@ -310,22 +347,30 @@ $(document).ready(function () {
 
     $(".header-web-button").click(function () {
         var webButtonData = $(this).attr("data-buttonmenu");
-        if($("[data-contentmenu='" + webButtonData + "']").hasClass("data-web-menu-none")){
+        if ($("[data-contentmenu='" + webButtonData + "']").hasClass("data-web-menu-none")) {
             $(".data-panel-web-menu").addClass("data-web-menu-none");
             $("[data-contentmenu='" + webButtonData + "']").removeClass("data-web-menu-none");
-        }else{
+        } else {
             $(".data-panel-web-menu").addClass("data-web-menu-none");
         }
     });
-
-
+    // my profile password seen start
+    $(".password-see-content img").click(function () {
+        var password_see_my_profile = $(".password-see-content input").attr("type");
+        if (password_see_my_profile == "text") {
+            $(".password-see-content input").attr('type', 'password');
+        } else {
+            $(".password-see-content input").attr('type', 'text');
+        }
+    });
+    // my profile password seen end
     $(".header-mobile-button").click(function () {
         var mobilButtonData = $(this).attr("data-buttonmenu");
-        if($("[data-contentmenu='" + mobilButtonData + "']").hasClass("data-menu-none")){
+        if ($("[data-contentmenu='" + mobilButtonData + "']").hasClass("data-menu-none")) {
             $(".data-panel-menu").addClass("data-menu-none");
             $("[data-contentmenu='" + mobilButtonData + "']").removeClass("data-menu-none");
             $("body").addClass("mobile-body-scroll-hidden");
-        }else{
+        } else {
             $(".data-panel-menu").addClass("data-menu-none");
             $("body").removeClass("mobile-body-scroll-hidden");
         }
@@ -345,9 +390,9 @@ $(document).ready(function () {
             $(".header-icon-panel ul li button").removeClass("header-button-active");
             $(".header-icon-panel ul li button").removeClass("button-active-arrow");
             $(".data-panel-web-menu").addClass("data-web-menu-none");
-           
+
         } else if (windowSize < 768) {
-          
+
             // $(".header-mobile ul li button").removeClass("header-button-active");
             // $(".data-panel-menu").addClass("data-menu-none");
 

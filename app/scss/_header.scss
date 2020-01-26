@@ -1,7 +1,7 @@
 // mobile popup end 
 .mobile-popup-index-box {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 55px;
     background-color: $grey-edge-F5F5F5;
     -webkit-box-shadow: 0px 6px 17px 0px rgba(43, 43, 43, 0.3);
@@ -12,10 +12,12 @@
     right: 0;
     bottom: 0;
     z-index: 98;
+
     // display: none;
     .mobile-msg-search-content {
         padding: 5px 0 2px 0;
         position: relative;
+
         .mobile-msg-search-input {
             width: 100%;
             margin: 0;
@@ -34,6 +36,7 @@
         width: 100%;
         text-align: center;
         background-color: $grey-edge-F5F5F5;
+
         a {
             text-align: center;
             display: block;
@@ -53,6 +56,7 @@
         left: 0;
         right: 0;
         background-color: $grey-edge-F5F5F5;
+
         p {
             float: left;
             color: $dark-888888;
@@ -139,11 +143,11 @@
         padding: 0;
         color: $dark-2b2b2b;
         display: block;
-        
-        
+
+
         overflow-x: hidden;
         overflow-y: auto;
-        
+
 
         .popup-request-item {
             text-align: left;
@@ -187,6 +191,7 @@
                 margin-top: 5px;
                 display: flex;
                 justify-content: center;
+
                 button {
                     font-size: 12px;
                     display: inline-block;
@@ -302,7 +307,80 @@
 
     }
 }
+
 // mobile popup end 
+
+// message box popup start
+
+.popup-messagebox-box-content {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 17%;
+    z-index: 99;
+    background-color: white;
+    width: 24%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    box-shadow: $box-sahdow3;
+    overflow: hidden;
+
+    .popup-messagebox-box-top {
+        background-color: $main-color-9100ff;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 3%;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        >a {
+            float: left;
+            margin: 0;
+            color: white;
+            font-size: 14px;
+        }
+
+        img {
+            margin-top: 2px;
+            float: right;
+            cursor: pointer;
+        }
+    }
+
+    .popup-messagebox-box-center {
+        height: 250px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding: 0 3%;
+    }
+    .popup-messagebox-box-bottom{
+        background-color: white;
+        left: 0;
+        bottom: 0;
+        display: inline-block;
+        width: 100%;
+        border-top: 1px solid #e9e9e9;
+        padding: 10px 3%;
+        .popup-messagebox-box-input{
+            resize: none;
+            outline: none;
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 19px;
+            border: 1px solid #e9e9e9;
+            padding: 8px 2%;
+            font-size: 12px;
+            max-height: 100px;
+            overflow-y:auto;
+            display:block;
+            overscroll-behavior: contain;
+        }
+    }
+}
+
+// message box popup end
+
 // header  start
 .header {
 
@@ -428,7 +506,7 @@
         }
 
     }
- 
+
     .popup-index-box {
         position: absolute;
         top: 55px;
@@ -491,6 +569,10 @@
         ul.popup-msg-inbox-content {
             padding: 0;
             color: $dark-2b2b2b;
+            display: block;
+            max-height: 260px;
+            overflow-y: auto;
+            overflow-x: hidden;
 
             .popup-msg-item {
                 text-align: left;
@@ -557,11 +639,10 @@
             padding: 0;
             color: $dark-2b2b2b;
             display: block;
-            
-            max-height: 250px;
+            max-height: 260px;
             overflow-x: hidden;
             overflow-y: auto;
-            
+
 
             .popup-request-item {
                 text-align: left;
@@ -645,8 +726,11 @@
         ul.popup-notify-content {
             padding: 0;
             color: $dark-2b2b2b;
-            display: table;
             width: 100%;
+            display: block;
+            max-height: 260px;
+            overflow-y: auto;
+            overflow-x: hidden;
 
             .popup-notify-item {
                 text-align: left;
@@ -803,8 +887,8 @@
 
                     .popup-index-box {
                         border-radius: 5px;
-                        width: 400px;  
-                        
+                        width: 400px;
+
                         padding: 0px 5px;
                         right: 0 !important;
                         // bottom: 0;
@@ -836,7 +920,8 @@
                             margin: 0 auto;
                         }
                     }
-                    >a >.btn-web-balance{
+
+                    >a>.btn-web-balance {
                         border: none;
                         background-color: transparent;
                         cursor: pointer;
@@ -846,10 +931,12 @@
                         outline: none;
                         line-height: 35px;
                         position: relative;
+
                         svg {
                             transform: scale(0.8);
                             margin: 0 auto;
                         }
+
                         img {
                             height: 20px;
                             margin: 0;
@@ -867,6 +954,7 @@
                             margin: 0 auto;
                         }
                     }
+
                     >button {
                         border: none;
                         background-color: transparent;
@@ -949,7 +1037,7 @@
                     top: 55px;
                     left: 0;
                     right: 0;
-                    
+
                     .popup-msg-inbox-content {
                         max-height: 200px;
 
