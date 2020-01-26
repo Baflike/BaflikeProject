@@ -2261,29 +2261,47 @@ body {
 }
 
 .pos_modal {
-    .modal-header {
-        position: relative;
-        padding: 0 !important;
-        overflow: hidden;
+    .modal-content{
+        border: none;
+        border-radius: 10px;
+        .modal-header {
+            position: relative;
+            padding: 0 !important;
+            overflow: hidden;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
 
-        img {
-            width: 100%;
+            img {
+                width: 100%;
+            }
+    
+            button {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                    border: none;
+                }
+    
+                img:focus{
+                    outline: none;
+                    box-shadow: none;
+                    border: none;
+                }
+            }
         }
-
-        button {
-            position: absolute;
-            right: 10px;
-            top: 10px;
+    
+        .modal-body {
+            padding: 0 !important;
+    
+            .post {
+                box-shadow: none !important;
+            }
         }
     }
-
-    .modal-body {
-        padding: 0 !important;
-
-        .post {
-            box-shadow: none !important;
-        }
-    }
+    
 }
 
 .custom-selectbox {
