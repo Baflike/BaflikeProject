@@ -2,10 +2,7 @@
     width: 100%;
 
     .header-web {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 20px;
-
+    
         .header-logo-section {
             width: 30%;
 
@@ -17,9 +14,7 @@
         }
 
         .header-log-in {
-            display: flex;
-            align-items: flex-end;
-
+            
             .email {
                 margin-right: 10px;
 
