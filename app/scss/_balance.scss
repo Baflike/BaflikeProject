@@ -369,7 +369,70 @@
             }
         }
 
-        .change_point_footer {}
+        .change_point_footer {
+            .change_point_footer_top{
+                font-size: 13px;
+                padding: 10px 10px;
+            }
+            .change_point_footer_bottom{
+                display: flex;
+                justify-content: space-between;
+                .convert_from{
+                    position: relative;
+                    display: flex;
+                    width: 40%;
+                    input {
+                        border-radius: 50px;
+                        font-size: 12px;
+                    }
+                    select {
+                        position: absolute;
+                        width: 50% !important;
+                        top: 1px;
+                        right: 0px;
+                        border-radius: 50px;
+                        font-size: 12px;
+                        background-color: white !important;
+                        width: 100%;
+                        padding: 5px 10px;
+                        color:#495057;
+                        border: 1px solid #ced4da;
+                    }
+                }
+                .convert_to{
+                    position: relative;
+                    display: flex;
+                    width: 40%;
+                    input {
+                        border-radius: 50px;
+                        font-size: 12px;
+                    }
+                    select {
+                        position: absolute;
+                        width: 50% !important;
+                        top: 1px;
+                        right: 0px;
+                        border-radius: 50px;
+                        font-size: 12px;
+                        background-color: white !important;
+                        width: 100%;
+                        padding: 5px 10px;
+                        color:#495057;
+                        border: 1px solid #ced4da;
+                    }
+                }
+            }
+            .change_point_footer_btn {
+                margin-top: 20px !important;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 5px;
+                button{
+                    width: 40%;
+                }
+            }
+            
+        }
     }
 
 
@@ -378,7 +441,7 @@
         padding: 10px;
         border-radius: 10px;
         margin-top: 20px;
-
+        margin-bottom: 50px;
         .statistic_header {
             display: flex;
             justify-content: space-between;
@@ -407,6 +470,109 @@
             }
         }
 
-        .statistic_footer {}
+        .statistic_footer {
+            .statistic_footer_top{
+                font-size: 13px;
+                padding: 10px 10px;
+            }
+            .statistic_footer_bottom{
+                display: flex;
+                justify-content: space-between;
+                .statistic_from{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                    input {
+                        top: 1px;
+                        right: 0px;
+                        border-radius: 50px;
+                        font-size: 12px;
+                        background-color: white !important;
+                        width: 100%;
+                        padding: 5px 10px;
+                        color:#495057;
+                        border: 1px solid #ced4da;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .statistic_to{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                    input {
+                        top: 1px;
+                        right: 0px;
+                        border-radius: 50px;
+                        font-size: 12px;
+                        background-color: white !important;
+                        width: 100%;
+                        padding: 5px 10px;
+                        color:#495057;
+                        border: 1px solid #ced4da;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .statistic_transaction_type{
+                    position: relative;
+                    display: flex;
+                    width: 33%;
+                    flex-direction: column;
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                    select {
+                        top: 1px;
+                        right: 0px;
+                        border-radius: 50px;
+                        font-size: 12px;
+                        background-color: white !important;
+                        width: 100%;
+                        padding: 5px 10px;
+                        color:#495057;
+                        border: 1px solid #ced4da;
+                    }
+                }
+            }
+        }
+        .statistic_table{
+            margin: 25px 0 0 5px;
+            .subscribers_content{
+                table{
+                    width: 100%;
+                    tr{
+                        th:first-child{
+                            padding: 10px 80px 10px 0px;
+                            font-size: 14px;
+                        }
+                        th{
+                            border-bottom: 1px solid #dfdfdf;
+                            color: gray;
+                            padding: 10px 40px 10px 0px;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        td{
+                            border-bottom: 1px solid #dfdfdf;
+                            padding: 10px 40px 10px 0px;
+                            font-size: 14px;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
