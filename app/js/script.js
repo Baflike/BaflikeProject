@@ -265,7 +265,7 @@ $(document).ready(function () {
       );
     }
 
-    console.log(i);
+    // console.log(i);
   }
   for (i = 1; i <= raniking_earn_numbersize; i++) {
     if (i > 0 && i < 4) {
@@ -329,7 +329,7 @@ $(document).ready(function () {
  
 
 
-  $(".profile-edit-btn").click(function () {
+  $(".my-profile-edit-button").click(function () {
     $(".popup-my-profile-edit-overlay").css({
       display: "flex"
     });

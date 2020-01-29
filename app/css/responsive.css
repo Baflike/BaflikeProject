@@ -108,12 +108,27 @@
 
  /* Small Devices, Tablets */
  @media only screen and (min-width: 768px){
+   
     .popup-messagebox-box-hide{
         height: 40px;
         width: 250px !important;
     }
  }
  @media only screen and (max-width: 768px) {
+    .ranking-section .ranking-tabs .ranking-tab-content .ranking-filtrate{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 2%;
+        justify-content: center;
+    }
+    .ranking-section .ranking-tabs .ranking-tab-content .ranking-filtrate select{
+         margin: 5px 5px 0 0;
+        
+    }
+    .popup-messagebox-box-content{
+        height: auto ;
+    }
+    
      .header {
          padding: 0 10px;
      }
@@ -195,7 +210,11 @@
      }
 
  }
-
+ @media only screen and (max-width: 570px) {
+    .ranking-section .ranking-tablinks .ranking-tab-link{
+        font-size: 14px;
+    }
+ }
  @media only screen and (max-width: 560px) {
      .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .ads-filter-label {
          width: 30%;
@@ -259,7 +278,7 @@
         width: 70% !important;
     }
      .ranking-section .ranking-tablinks .ranking-tab-link {
-         font-size: 14px;
+         font-size: 9px;
      }
 
      .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent {
@@ -334,6 +353,9 @@
      .ads-show-all-content .ads-show-all-item {
          width: 100%;
      }
+     .post .post_top .options ul{
+        width: 240px;
+     }
 
  }
 
@@ -343,6 +365,13 @@
      .popup-friends-content {
          width: 90% !important;
      }
+     .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent {
+        font-size: 12px;
+        height: 140px;
 
+    }
+    .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent .ranking-img-overlay{
+        height: 65px;
+    }
 
  }

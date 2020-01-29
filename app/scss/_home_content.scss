@@ -213,12 +213,16 @@
                 cursor: pointer;
             }
             ul{
-                z-index: 999999;
+                z-index: 9;
                 right: 0;
                 left: unset !important;
                 padding: 10px;
                 width: 300px;
                 border-radius: 10px;
+                will-change: auto !important;
+                text-transform: none !important;
+                top: 20px !important;
+                transform: none !important;
                 li{
                     border-bottom: 1px solid #c8c8c8;
                     padding: 10px;
