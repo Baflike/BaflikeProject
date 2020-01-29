@@ -6,9 +6,11 @@
          height: 200px;
          overflow: hidden;
      }
-     .popup-messagebox-box-content{
+
+     .popup-messagebox-box-content {
          width: 28%;
      }
+
      .ads-button-content {
          border-top: 1px solid #EFEEF2;
      }
@@ -41,25 +43,29 @@
  /* Medium Devices, Desktops */
 
  @media only screen and (max-width: 992px) {
-    .popup-my-profile-edit-overlay .popup-my-profile-edit-top{
-        padding-bottom: 20px;
-    }
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-top {
+         padding-bottom: 20px;
+     }
+
      .popup-my-profile-edit-overlay .popup-my-profile-edit-top .my-profile-form-wallet-btn {
          padding: 7px 0;
          font-size: 14px;
      }
-     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle{
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle {
          display: table;
      }
-     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle .popup-my-profile-edit-left{
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #dbdbdb;
-        padding: 20px 0;
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle .popup-my-profile-edit-left {
+         width: 100%;
+         border-right: none;
+         border-bottom: 1px solid #dbdbdb;
+         padding: 20px 0;
      }
-     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle .popup-my-profile-edit-right{
-        width: 100%;
-        padding: 20px 0;
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-middle .popup-my-profile-edit-right {
+         width: 100%;
+         padding: 20px 0;
      }
 
      .popup-status-wrapper {
@@ -71,10 +77,12 @@
          width: 50%;
 
      }
-     .popup-messagebox-box-content{
-        width: 35%;
-        right: 6%;
-    }
+
+     .popup-messagebox-box-content {
+         width: 35%;
+         right: 6%;
+     }
+
      .bf-form-control {
          width: 100% !important;
      }
@@ -95,10 +103,11 @@
      .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .bootstrap-tagsinput {
          width: 75%;
      }
+
      .popup-friends-content {
-        width: 50% !important;
-    }
-    
+         width: 50% !important;
+     }
+
  }
 
  @media only screen and (min-width: 810px) {}
@@ -107,49 +116,60 @@
 
 
  /* Small Devices, Tablets */
- @media only screen and (min-width: 768px){
-   
-    .popup-messagebox-box-hide{
-        height: 40px;
-        width: 250px !important;
-    }
+ @media only screen and (min-width: 768px) {
+
+     .popup-messagebox-box-hide {
+         height: 40px;
+         width: 250px !important;
+     }
  }
+
  @media only screen and (max-width: 768px) {
-    .ranking-section .ranking-tabs .ranking-tab-content .ranking-filtrate{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px 2%;
-        justify-content: center;
-    }
-    .ranking-section .ranking-tabs .ranking-tab-content .ranking-filtrate select{
+     .ranking-section .ranking-tabs .ranking-tab-content .ranking-filtrate {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 20px 2%;
+         justify-content: center;
+     }
+
+     .ranking-section .ranking-tabs .ranking-tab-content .ranking-filtrate select {
          margin: 5px 5px 0 0;
-        
-    }
-    .popup-messagebox-box-content{
-        height: auto ;
-    }
-    
+
+     }
+
+     .popup-messagebox-box-content {
+         height: auto;
+     }
+
+     .balance .statistic .statistic_table {
+         overflow-x: auto;
+     }
+
      .header {
          padding: 0 10px;
      }
-     .popup-messagebox-box-content{
-        width: 100%;
-        left: 0;
-        right: 0;
-        top: 55px;
-        box-shadow: none;
-        border-radius: 0px;
-    }
 
-     .mobile-popup-index-box{
+     .popup-messagebox-box-content {
+         width: 100%;
+         left: 0;
+         right: 0;
+         top: 55px;
+         box-shadow: none;
+         border-radius: 0px;
+     }
+
+     .mobile-popup-index-box {
          display: block;
      }
+
      .data-menu-none {
-        display: none !important;
-    }
-    .mobile-body-scroll-hidden{
-        overflow: hidden;
-    }
+         display: none !important;
+     }
+
+     .mobile-body-scroll-hidden {
+         overflow: hidden;
+     }
+
      .panel-left {
          -webkit-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
          -moz-box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
@@ -199,22 +219,24 @@
      }
 
      .popup-my-profile-edit-overlay .popup-my-profile-edit-top .profile-input-adwcash {
-        float: none;
-        width: 100%;
+         float: none;
+         width: 100%;
      }
 
      .popup-my-profile-edit-overlay .popup-my-profile-edit-top .profile-input-name {
-        float: none;
-        width: 100%;
+         float: none;
+         width: 100%;
 
      }
 
  }
+
  @media only screen and (max-width: 570px) {
-    .ranking-section .ranking-tablinks .ranking-tab-link{
-        font-size: 14px;
-    }
+     .ranking-section .ranking-tablinks .ranking-tab-link {
+         font-size: 14px;
+     }
  }
+
  @media only screen and (max-width: 560px) {
      .ads-show-all-content .ads-show-all-filtrate .ads-show-all-filter .ads-filter-label {
          width: 30%;
@@ -243,7 +265,8 @@
          width: 100%;
 
      }
-     .popup-my-profile-edit-overlay .popup-my-profile-edit-content{
+
+     .popup-my-profile-edit-overlay .popup-my-profile-edit-content {
          width: 80%;
      }
 
@@ -258,7 +281,12 @@
  /* Extra Small Devices, Phones */
 
  @media only screen and (max-width: 480px) {
-
+    .subscribers .subscribers_content{
+        overflow-x: auto;
+      
+}
+    }
+    
      .ranking-tab-people {
          overflow: auto;
          width: 100px;
@@ -274,9 +302,11 @@
          display: flex;
          white-space: nowrap;
      }
+
      .popup-friends-content {
-        width: 70% !important;
-    }
+         width: 70% !important;
+     }
+
      .ranking-section .ranking-tablinks .ranking-tab-link {
          font-size: 9px;
      }
@@ -353,8 +383,9 @@
      .ads-show-all-content .ads-show-all-item {
          width: 100%;
      }
-     .post .post_top .options ul{
-        width: 240px;
+
+     .post .post_top .options ul {
+         width: 240px;
      }
 
  }
@@ -365,13 +396,15 @@
      .popup-friends-content {
          width: 90% !important;
      }
-     .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent {
-        font-size: 12px;
-        height: 140px;
 
-    }
-    .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent .ranking-img-overlay{
-        height: 65px;
-    }
+     .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent {
+         font-size: 12px;
+         height: 140px;
+
+     }
+
+     .ranking-section .ranking-tabs .ranking-tab-content .ranking-tab-image .ranking-image-item .ranking-img-conent .ranking-img-overlay {
+         height: 65px;
+     }
 
  }
