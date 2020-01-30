@@ -136,7 +136,10 @@
          margin: 5px 5px 0 0;
 
      }
+     .header-web {
+        display: none ;
 
+    }
      .popup-messagebox-box-content {
          height: auto;
      }
@@ -176,10 +179,7 @@
          box-shadow: 8px 0px 17px -4px rgba(43, 43, 43, 0.3);
      }
 
-     .header-web {
-         display: none;
-
-     }
+     
 
      .header-mobile {
          display: block !important;
@@ -235,6 +235,11 @@
      .ranking-section .ranking-tablinks .ranking-tab-link {
          font-size: 14px;
      }
+     .subscribers .subscribers_content{
+        overflow-x: auto;
+      
+
+    }
  }
 
  @media only screen and (max-width: 560px) {
@@ -281,10 +286,10 @@
  /* Extra Small Devices, Phones */
 
  @media only screen and (max-width: 480px) {
-    .subscribers .subscribers_content{
-        overflow-x: auto;
-      
-}
+    
+    .header-register .header-web {
+        display: block !important;
+
     }
     
      .ranking-tab-people {

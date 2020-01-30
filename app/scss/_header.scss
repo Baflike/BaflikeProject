@@ -327,7 +327,7 @@
     border-top-right-radius: 14px;
     box-shadow: $box-sahdow3;
     overflow: hidden;
-    display: none;
+    // display: none;
     .popup-messagebox-box-top {
         background-color: $main-color-9100ff;
         display: inline-block;
@@ -376,6 +376,7 @@
         }
         .popup-messagebox-text-message{
             margin-top: 10px;
+            margin-bottom: 10px;
             display: flex;
             .popup-messagebox-text-message-logo{
                 overflow: hidden;
@@ -398,6 +399,19 @@
                     font-size: 13px;
                     color: $dark-2b2b2b;
                     margin: 0;
+                }
+                .popup-messagebox-sending-img{
+                    max-width: 60%;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+                a.popup-messagebox-sending-link{
+                    color: $main-color-9100ff;
+                    font-size: 13px;
+                    padding-top: 10px;
+                    display: block;
+                    word-wrap: break-word;
                 }
             }
         }

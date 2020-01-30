@@ -482,7 +482,7 @@ body {
     margin-top: 55px;
     display: block;
     width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -1788,7 +1788,7 @@ body {
         box-sizing: border-box;
         background-color: $white;
         border-radius: 10px;
-
+        box-shadow: $box-sahdow4;
         .ads-media-upload {
             margin-top: 20px;
             border-radius: 18px;
