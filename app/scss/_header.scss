@@ -327,7 +327,7 @@
     border-top-right-radius: 14px;
     box-shadow: $box-sahdow3;
     overflow: hidden;
-    // display: none;
+    display: none;
     .popup-messagebox-box-top {
         background-color: $main-color-9100ff;
         display: inline-block;
@@ -623,12 +623,13 @@
             display: block;
             text-align: center;
             border-bottom: 1px solid $grrey2-EFEEF2;
-            padding: 3px 0;
             font-size: 14px;
 
             a {
                 text-decoration: none;
                 color: $main-color-9100ff;
+                display: block;
+                padding: 3px 0;
             }
         }
 

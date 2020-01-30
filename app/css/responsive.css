@@ -228,7 +228,9 @@
          width: 100%;
 
      }
-
+     .suggested-ads{
+         margin-top: 8px;
+     }
  }
 
  @media only screen and (max-width: 570px) {
